@@ -262,6 +262,4 @@ for i in range(len(prediction)):
 explainer = LimeTextExplainer(class_names=['Not Clickbait', 'Clickbait'])
 idx = 1  # Index of the sample you want to explain
 exp = explainer.explain_instance(X_test.iloc[idx], pipe.predict_proba)
-
-fig = exp.as_pyplot_figure()
-fig.savefig("shap_plot.png")
+exp.save_to_file('lime.html')
