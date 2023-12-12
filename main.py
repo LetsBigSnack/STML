@@ -263,3 +263,4 @@ explainer = LimeTextExplainer(class_names=['Not Clickbait', 'Clickbait'])
 idx = 1  # Index of the sample you want to explain
 exp = explainer.explain_instance(X_test.iloc[idx], pipe.predict_proba)
 exp.save_to_file('lime.html')
+#JONAS ist ein hella süssie
