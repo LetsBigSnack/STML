@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divHDKXZZSNDRYY7LK"></div>
+        <div class="lime top_div" id="top_divZXFIO02B1Q25PZP"></div>
         
         <script>
-        var top_div = d3.select('#top_divHDKXZZSNDRYY7LK').classed('lime top_div', true);
+        var top_div = d3.select('#top_divZXFIO02B1Q25PZP').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.5917044069643486, 0.40829559303565144]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.5900343947790029, 0.4099656052209971]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["political", -0.12309088588368924], ["david", 0.04374801134379108], ["fallout", 0.03673704257110171], ["professor", -0.027239081887348054], ["gathers", 0.00734794879799394], ["sacking", -0.00031576907481216897], ["nutt", -0.00031090678905108864], ["momentum", 0.00017980266492612855]], 1, exp_div);
+                exp.show([["political", -0.12293244488368073], ["david", 0.04413854505322879], ["fallout", 0.03626007208645217], ["professor", -0.0268687004553926], ["gathers", 0.007081354129103589], ["momentum", -0.00025853222150248146], ["nutt", -0.0001854659566843971], ["sacking", 8.606244051437905e-05]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["political", 0, -0.12309088588368924], ["david", 36, 0.04374801134379108], ["fallout", 10, 0.03673704257110171], ["professor", 26, -0.027239081887348054], ["gathers", 47, 0.00734794879799394], ["sacking", 18, -0.00031576907481216897], ["nutt", 42, -0.00031090678905108864], ["momentum", 55, 0.00017980266492612855]], 1, "political fallout sacking professor david nutt gathers momentum", raw_div, true);
+            exp.show_raw_text([["political", 0, -0.12293244488368073], ["david", 36, 0.04413854505322879], ["fallout", 10, 0.03626007208645217], ["professor", 26, -0.0268687004553926], ["gathers", 47, 0.007081354129103589], ["momentum", 55, -0.00025853222150248146], ["nutt", 42, -0.0001854659566843971], ["sacking", 18, 8.606244051437905e-05]], 1, "political fallout sacking professor david nutt gathers momentum", raw_div, true);
             
         </script>
         </body></html>

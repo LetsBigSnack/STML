@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div538XH1AUV2JETZ8"></div>
+        <div class="lime top_div" id="top_divVZL5DUQ7XFVK2G7"></div>
         
         <script>
-        var top_div = d3.select('#top_div538XH1AUV2JETZ8').classed('lime top_div', true);
+        var top_div = d3.select('#top_divVZL5DUQ7XFVK2G7').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.857705908156073, 0.14229409184392708]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8575630613894345, 0.14243693861056544]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["us", -0.142720148269961], ["bank", -0.10560862201949434], ["house", -0.027264359773438655], ["sweeping", 0.0266821674287041], ["regulatory", 0.026303458399601194], ["passed", 0.022018574559728357], ["representatives", -0.004678503093540762], ["overhaul", -7.181693476467477e-05]], 1, exp_div);
+                exp.show([["us", -0.1412407510277561], ["bank", -0.10532454238599957], ["sweeping", 0.027652898672306848], ["house", -0.02717770796158862], ["regulatory", 0.0266208264753835], ["passed", 0.022320520563810682], ["representatives", -0.004954290616395558], ["overhaul", -0.0017164277314662049]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["us", 41, -0.142720148269961], ["bank", 9, -0.10560862201949434], ["house", 44, -0.027264359773438655], ["sweeping", 0, 0.0266821674287041], ["regulatory", 14, 0.026303458399601194], ["passed", 34, 0.022018574559728357], ["representatives", 50, -0.004678503093540762], ["overhaul", 25, -7.181693476467477e-05]], 1, "sweeping bank regulatory overhaul passed us house representatives", raw_div, true);
+            exp.show_raw_text([["us", 41, -0.1412407510277561], ["bank", 9, -0.10532454238599957], ["sweeping", 0, 0.027652898672306848], ["house", 44, -0.02717770796158862], ["regulatory", 14, 0.0266208264753835], ["passed", 34, 0.022320520563810682], ["representatives", 50, -0.004954290616395558], ["overhaul", 25, -0.0017164277314662049]], 1, "sweeping bank regulatory overhaul passed us house representatives", raw_div, true);
             
         </script>
         </body></html>

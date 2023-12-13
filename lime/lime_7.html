@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divHRZAFB6NNNZVRAN"></div>
+        <div class="lime top_div" id="top_divIF3NHWW8TK58FX9"></div>
         
         <script>
-        var top_div = d3.select('#top_divHRZAFB6NNNZVRAN').classed('lime top_div', true);
+        var top_div = d3.select('#top_divIF3NHWW8TK58FX9').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.18986864889019917, 0.8101313511098008]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.19071819442527216, 0.8092818055747278]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["ever", 0.1556770596764053], ["real", 0.13075315675160296], ["estate", -0.09258860397163757], ["might", 0.058355480878166194], ["ad", -0.0562166995747444], ["sexist", -0.00043240999572447084]], 1, exp_div);
+                exp.show([["ever", 0.15704287286103383], ["real", 0.12945343730447836], ["estate", -0.09367929996129873], ["might", 0.05850490062741051], ["ad", -0.0548366166308184], ["sexist", -0.00018236962686469477]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["ever", 28, 0.1556770596764053], ["real", 13, 0.13075315675160296], ["estate", 18, -0.09258860397163757], ["might", 0, 0.058355480878166194], ["ad", 25, -0.0562166995747444], ["sexist", 6, -0.00043240999572447084]], 1, "might sexist real estate ad ever", raw_div, true);
+            exp.show_raw_text([["ever", 28, 0.15704287286103383], ["real", 13, 0.12945343730447836], ["estate", 18, -0.09367929996129873], ["might", 0, 0.05850490062741051], ["ad", 25, -0.0548366166308184], ["sexist", 6, -0.00018236962686469477]], 1, "might sexist real estate ad ever", raw_div, true);
             
         </script>
         </body></html>

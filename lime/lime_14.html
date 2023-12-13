@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divOQX8LNYI0HZPA1W"></div>
+        <div class="lime top_div" id="top_divGVY3EPYID8M845M"></div>
         
         <script>
-        var top_div = d3.select('#top_divOQX8LNYI0HZPA1W').classed('lime top_div', true);
+        var top_div = d3.select('#top_divGVY3EPYID8M845M').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8191687406222566, 0.18083125937774333]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8190484486508444, 0.1809515513491556]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["dies", -0.2496879564995205], ["anchor", 0.04529261645747041], ["news", -0.040369488070925906], ["peter", 0.014632195837428435], ["jennings", 0.01457704377527424], ["abc", -0.0019588616170566754]], 1, exp_div);
+                exp.show([["dies", -0.2525847028452693], ["anchor", 0.04548976428042611], ["news", -0.04105171734478044], ["peter", 0.015425960633551169], ["jennings", 0.014131027434312085], ["abc", -0.0015127814399155427]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["dies", 31, -0.2496879564995205], ["anchor", 9, 0.04529261645747041], ["news", 4, -0.040369488070925906], ["peter", 16, 0.014632195837428435], ["jennings", 22, 0.01457704377527424], ["abc", 0, -0.0019588616170566754]], 1, "abc news anchor peter jennings dies ", raw_div, true);
+            exp.show_raw_text([["dies", 31, -0.2525847028452693], ["anchor", 9, 0.04548976428042611], ["news", 4, -0.04105171734478044], ["peter", 16, 0.015425960633551169], ["jennings", 22, 0.014131027434312085], ["abc", 0, -0.0015127814399155427]], 1, "abc news anchor peter jennings dies ", raw_div, true);
             
         </script>
         </body></html>

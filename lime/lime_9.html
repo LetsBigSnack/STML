@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divKF4B2M7356KPHFY"></div>
+        <div class="lime top_div" id="top_divDMGMFQ3TJHRTH9D"></div>
         
         <script>
-        var top_div = d3.select('#top_divKF4B2M7356KPHFY').classed('lime top_div', true);
+        var top_div = d3.select('#top_divDMGMFQ3TJHRTH9D').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8582487450427415, 0.14175125495725846]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8590630957029162, 0.1409369042970838]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["says", -0.15535587220934025], ["palestinian", -0.026617479141168906], ["rival", -0.015666514154017524], ["attacked", -0.00935417822057282], ["hamas", -0.004865221371058844]], 1, exp_div);
+                exp.show([["says", -0.15520877687033355], ["palestinian", -0.02672982511324209], ["rival", -0.01543862114221549], ["attacked", -0.009272679072896708], ["hamas", -0.003799784214965162]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["says", 18, -0.15535587220934025], ["palestinian", 0, -0.026617479141168906], ["rival", 12, -0.015666514154017524], ["attacked", 23, -0.00935417822057282], ["hamas", 32, -0.004865221371058844]], 1, "palestinian rival says attacked hamas", raw_div, true);
+            exp.show_raw_text([["says", 18, -0.15520877687033355], ["palestinian", 0, -0.02672982511324209], ["rival", 12, -0.01543862114221549], ["attacked", 23, -0.009272679072896708], ["hamas", 32, -0.003799784214965162]], 1, "palestinian rival says attacked hamas", raw_div, true);
             
         </script>
         </body></html>
