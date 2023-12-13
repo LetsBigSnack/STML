@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <p>You entered: {{ text_input }}</p>
+    <p>This Title has been classified as <b>{{ result }}</b></p>
+    <p>Probabilies <b>{{ proba }}</b> </p>
+    <iframe src="{{ url_for('static', filename='lime.html') }}" title="LIME" width="100%" height="500px"></iframe>
+</body>
+</html>
