@@ -4,6 +4,7 @@
 	flex-direction: column;
 	gap: 1rem;
 	padding: 1rem;
+	align-self: start;
 }
 p {
 	margin: 0;
@@ -16,10 +17,30 @@ b {
 }
 
 iframe {
-	max-width: 1500px;
 	width: 80vw;
-	min-width: 800px;
+	max-width: 100%;
 	background-color: var(--c-text);
 	border-radius: 1rem;
 	border: none;
+	overflow-y: auto;
+}
+
+.button {
+	background-color: var(--c-background);
+	color: var(--c-text);
+	border: var(--c-text) 1px solid;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	box-shadow: var(--c-text) 0px 0px 0px 1px inset;
+	text-decoration: none;
+	color: var(--c-text);
+	transition: all 0.2s ease-in-out;
+	width: 100%;
+	text-align: center;
+}
+
+.button:hover {
+	background-color: var(--c-text);
+	color: var(--c-background);
 }

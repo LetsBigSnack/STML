@@ -12,4 +12,10 @@ form input {
 	color: var(--c-text);
 	font-size: 1.5rem;
 	box-shadow: var(--c-text) 0px 0px 0px 1px inset;
+	transition: all 0.2s ease-in-out;
+}
+
+form input[type='submit']:hover {
+	background-color: var(--c-text);
+	color: var(--c-background);
 }
