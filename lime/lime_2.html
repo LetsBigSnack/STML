@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divRJ0P0QPC3ZLTWIA"></div>
+        <div class="lime top_div" id="top_div0Z3YZZXNDQJ5EFX"></div>
         
         <script>
-        var top_div = d3.select('#top_divRJ0P0QPC3ZLTWIA').classed('lime top_div', true);
+        var top_div = d3.select('#top_div0Z3YZZXNDQJ5EFX').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.4549082642401855, 0.5450917357598145]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.29679393632402795, 0.703206063675972]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["women", 0.23101257391506622], ["rules", -0.1862616885182093], ["date", 0.10584214521311647], ["first", -0.05762888059503773], ["man", -0.05419745738410393]], 1, exp_div);
+                exp.show([["24", 0.18958918107276881], ["Women", 0.16557148789137374], ["Rules", -0.16365195165702004], ["Date", 0.06540937228502619], ["Man", -0.055626247047436204], ["First", -0.05292295177635769]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["women", 7, 0.23101257391506622], ["rules", 1, -0.1862616885182093], ["date", 19, 0.10584214521311647], ["first", 13, -0.05762888059503773], ["man", 24, -0.05419745738410393]], 1, " rules women first date man", raw_div, true);
+            exp.show_raw_text([["24", 0, 0.18958918107276881], ["Women", 9, 0.16557148789137374], ["Rules", 3, -0.16365195165702004], ["Date", 21, 0.06540937228502619], ["Man", 26, -0.055626247047436204], ["First", 15, -0.05292295177635769]], 1, "24 Rules Women First Date Man", raw_div, true);
             
         </script>
         </body></html>

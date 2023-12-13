@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divMYI5RB94K2AQ6JS"></div>
+        <div class="lime top_div" id="top_divMDPVNPCX67TGU6Z"></div>
         
         <script>
-        var top_div = d3.select('#top_divMYI5RB94K2AQ6JS').classed('lime top_div', true);
+        var top_div = d3.select('#top_divMDPVNPCX67TGU6Z').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.880767938064701, 0.11923206193529898]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.887674337693247, 0.11232566230675295]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["kills", -0.14935708679246412], ["least", -0.06769315672446755], ["coordinated", 0.044971561270969705], ["india", -0.037842894491153245], ["series", -0.01181178435429599], ["bombs", 0.009968454435369055]], 1, exp_div);
+                exp.show([["kills", -0.14382589190043377], ["least", -0.0778951552844525], ["Coordinated", 0.039144193384104124], ["India", -0.036028931770584756], ["series", -0.012686447116688255], ["80", 0.01180642730718871], ["bombs", 0.005184181963249649]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["kills", 25, -0.14935708679246412], ["least", 31, -0.06769315672446755], ["coordinated", 0, 0.044971561270969705], ["india", 37, -0.037842894491153245], ["series", 12, -0.01181178435429599], ["bombs", 19, 0.009968454435369055]], 1, "coordinated series bombs kills least india", raw_div, true);
+            exp.show_raw_text([["kills", 25, -0.14382589190043377], ["least", 31, -0.0778951552844525], ["Coordinated", 0, 0.039144193384104124], ["India", 40, -0.036028931770584756], ["series", 12, -0.012686447116688255], ["80", 37, 0.01180642730718871], ["bombs", 19, 0.005184181963249649]], 1, "Coordinated series bombs kills least 80 India", raw_div, true);
             
         </script>
         </body></html>

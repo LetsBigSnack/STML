@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div3CO3PWWRKEUYDCG"></div>
+        <div class="lime top_div" id="top_div9VE91EZ96OKMP5I"></div>
         
         <script>
-        var top_div = d3.select('#top_div3CO3PWWRKEUYDCG').classed('lime top_div', true);
+        var top_div = d3.select('#top_div9VE91EZ96OKMP5I').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.3970552969219385, 0.6029447030780615]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.30769525282994636, 0.6923047471700536]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["indians", 0.042576688212244064], ["priyanka", 0.04154907917958585], ["chopra", 0.03036297165482255], ["aside", -0.024819279345026788], ["projects", -0.021894329816047692], ["appeared", 0.002190941933891579], ["hollywood", -0.0017395036872937396]], 1, exp_div);
+                exp.show([["27", 0.13054136236675917], ["Projects", -0.035196888477247563], ["Priyanka", 0.028260496618094263], ["Aside", -0.027189366815612043], ["Indians", 0.024333530075648178], ["Chopra", 0.017015153374625405], ["Appeared", -0.007561026743607367], ["Hollywood", -0.006689483868916683]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["indians", 1, 0.042576688212244064], ["priyanka", 15, 0.04154907917958585], ["chopra", 24, 0.03036297165482255], ["aside", 9, -0.024819279345026788], ["projects", 50, -0.021894329816047692], ["appeared", 31, 0.002190941933891579], ["hollywood", 40, -0.0017395036872937396]], 1, " indians aside priyanka chopra appeared hollywood projects", raw_div, true);
+            exp.show_raw_text([["27", 0, 0.13054136236675917], ["Projects", 52, -0.035196888477247563], ["Priyanka", 17, 0.028260496618094263], ["Aside", 11, -0.027189366815612043], ["Indians", 3, 0.024333530075648178], ["Chopra", 26, 0.017015153374625405], ["Appeared", 33, -0.007561026743607367], ["Hollywood", 42, -0.006689483868916683]], 1, "27 Indians Aside Priyanka Chopra Appeared Hollywood Projects", raw_div, true);
             
         </script>
         </body></html>

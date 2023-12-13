@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divBH2BOZBMMZ4QKV2"></div>
+        <div class="lime top_div" id="top_divEK9Z9J2FETMQFNE"></div>
         
         <script>
-        var top_div = d3.select('#top_divBH2BOZBMMZ4QKV2').classed('lime top_div', true);
+        var top_div = d3.select('#top_divEK9Z9J2FETMQFNE').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6650370434143014, 0.3349629565856986]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6683577937998824, 0.33164220620011764]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["wall", -0.11783984753430186], ["st", -0.05256892828578827], ["harmless", 0.046279806259465324], ["journal", 0.014033501520302888], ["mailed", -0.0009913639180691586], ["powder", 0.0002625066410596292]], 1, exp_div);
+                exp.show([["Wall", -0.11063846429627416], ["St", -0.05974730995516273], ["Harmless", 0.044611025118442255], ["Journal", 0.015363196597726463], ["Powder", -0.0011937302028218555], ["Mailed", -0.0011888141952778447]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["wall", 14, -0.11783984753430186], ["st", 19, -0.05256892828578827], ["harmless", 30, 0.046279806259465324], ["journal", 22, 0.014033501520302888], ["mailed", 7, -0.0009913639180691586], ["powder", 0, 0.0002625066410596292]], 1, "powder mailed wall st journal harmless", raw_div, true);
+            exp.show_raw_text([["Wall", 14, -0.11063846429627416], ["St", 19, -0.05974730995516273], ["Harmless", 30, 0.044611025118442255], ["Journal", 22, 0.015363196597726463], ["Powder", 0, -0.0011937302028218555], ["Mailed", 7, -0.0011888141952778447]], 1, "Powder Mailed Wall St Journal Harmless", raw_div, true);
             
         </script>
         </body></html>

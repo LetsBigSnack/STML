@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divINGXQETEF4A309Q"></div>
+        <div class="lime top_div" id="top_div6L77W86VZICKVW4"></div>
         
         <script>
-        var top_div = d3.select('#top_divINGXQETEF4A309Q').classed('lime top_div', true);
+        var top_div = d3.select('#top_div6L77W86VZICKVW4').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8106867894578713, 0.18931321054212863]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8068784687407964, 0.1931215312592036]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["resigns", -0.16590016179886996], ["bbc", -0.09362886793387641], ["entwistle", -0.014794681709633032], ["directorgeneral", -0.012051079846364282]], 1, exp_div);
+                exp.show([["resigns", -0.1659436288992673], ["BBC", -0.09158124033307719], ["Entwistle", -0.01079717974720696], ["DirectorGeneral", -0.01050345150315322]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["resigns", 30, -0.16590016179886996], ["bbc", 0, -0.09362886793387641], ["entwistle", 20, -0.014794681709633032], ["directorgeneral", 4, -0.012051079846364282]], 1, "bbc directorgeneral entwistle resigns", raw_div, true);
+            exp.show_raw_text([["resigns", 30, -0.1659436288992673], ["BBC", 0, -0.09158124033307719], ["Entwistle", 20, -0.01079717974720696], ["DirectorGeneral", 4, -0.01050345150315322]], 1, "BBC DirectorGeneral Entwistle resigns", raw_div, true);
             
         </script>
         </body></html>

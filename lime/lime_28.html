@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divA1E4NBGSJ8W4WXC"></div>
+        <div class="lime top_div" id="top_divHC839T522MBHWSU"></div>
         
         <script>
-        var top_div = d3.select('#top_divA1E4NBGSJ8W4WXC').classed('lime top_div', true);
+        var top_div = d3.select('#top_divHC839T522MBHWSU').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.04816665859095137, 0.9518333414090486]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.050556468430303814, 0.9494435315696962]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["know", 0.11520994433846199], ["based", 0.0923887621712498], ["favorite", 0.05511163380523856], ["eye", -0.038230743996042545], ["color", 0.025824856898768272], ["eyeliner", -0.019460099055905365], ["style", -0.0011728291441930698]], 1, exp_div);
+                exp.show([["Know", 0.11584096365135459], ["Based", 0.09479943511093324], ["Favorite", 0.05393536711112442], ["Eye", -0.03679130256882717], ["Color", 0.023502001467253106], ["Eyeliner", -0.021274093197817385], ["Style", -0.003664879897567286]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["know", 0, 0.11520994433846199], ["based", 15, 0.0923887621712498], ["favorite", 21, 0.05511163380523856], ["eye", 5, -0.038230743996042545], ["color", 9, 0.025824856898768272], ["eyeliner", 30, -0.019460099055905365], ["style", 39, -0.0011728291441930698]], 1, "know eye color based favorite eyeliner style", raw_div, true);
+            exp.show_raw_text([["Know", 0, 0.11584096365135459], ["Based", 15, 0.09479943511093324], ["Favorite", 21, 0.05393536711112442], ["Eye", 5, -0.03679130256882717], ["Color", 9, 0.023502001467253106], ["Eyeliner", 30, -0.021274093197817385], ["Style", 39, -0.003664879897567286]], 1, "Know Eye Color Based Favorite Eyeliner Style", raw_div, true);
             
         </script>
         </body></html>

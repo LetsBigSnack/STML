@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divNO3ZHJI3CE3QOO3"></div>
+        <div class="lime top_div" id="top_divLEOITRLOIYV4885"></div>
         
         <script>
-        var top_div = d3.select('#top_divNO3ZHJI3CE3QOO3').classed('lime top_div', true);
+        var top_div = d3.select('#top_divLEOITRLOIYV4885').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7613231228325348, 0.23867687716746522]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7559942893053246, 0.24400571069467542]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["security", -0.1323748694689734], ["digital", -0.08294720888350782], ["lookout", 0.048834800525795086], ["camera", 0.007050959804221111]], 1, exp_div);
+                exp.show([["Security", -0.13307908772091104], ["Digital", -0.08108867330835076], ["Lookout", 0.050252373387130546], ["Camera", 0.011638121933243819]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["security", 16, -0.1323748694689734], ["digital", 8, -0.08294720888350782], ["lookout", 0, 0.048834800525795086], ["camera", 25, 0.007050959804221111]], 1, "lookout digital security camera", raw_div, true);
+            exp.show_raw_text([["Security", 16, -0.13307908772091104], ["Digital", 8, -0.08108867330835076], ["Lookout", 0, 0.050252373387130546], ["Camera", 25, 0.011638121933243819]], 1, "Lookout Digital Security Camera", raw_div, true);
             
         </script>
         </body></html>

@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divSKU9XAKX5S17RR6"></div>
+        <div class="lime top_div" id="top_divJ7XQKNO6AWQ0UNI"></div>
         
         <script>
-        var top_div = d3.select('#top_divSKU9XAKX5S17RR6').classed('lime top_div', true);
+        var top_div = d3.select('#top_divJ7XQKNO6AWQ0UNI').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7966963451920432, 0.20330365480795673]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8067805604461363, 0.1932194395538637]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["crash", -0.15083852031898284], ["plane", -0.07126152787732735], ["one", 0.05697498895115515], ["die", -0.049568667290596696], ["hundred", 0.043484135966223074], ["madrid", -0.01675596612884815]], 1, exp_div);
+                exp.show([["crash", -0.15025307119710304], ["plane", -0.0705903626486425], ["die", -0.06128428269444133], ["one", 0.05588257290679861], ["hundred", 0.04321436366146886], ["Madrid", -0.013847733542017682]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["crash", 29, -0.15083852031898284], ["plane", 23, -0.07126152787732735], ["one", 0, 0.05697498895115515], ["die", 12, -0.049568667290596696], ["hundred", 4, 0.043484135966223074], ["madrid", 16, -0.01675596612884815]], 1, "one hundred die madrid plane crash", raw_div, true);
+            exp.show_raw_text([["crash", 29, -0.15025307119710304], ["plane", 23, -0.0705903626486425], ["die", 12, -0.06128428269444133], ["one", 0, 0.05588257290679861], ["hundred", 4, 0.04321436366146886], ["Madrid", 16, -0.013847733542017682]], 1, "one hundred die Madrid plane crash", raw_div, true);
             
         </script>
         </body></html>

@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divIBZ98TFGPBOWHAB"></div>
+        <div class="lime top_div" id="top_divNXMQFGS8RM8PMCM"></div>
         
         <script>
-        var top_div = d3.select('#top_divIBZ98TFGPBOWHAB').classed('lime top_div', true);
+        var top_div = d3.select('#top_divNXMQFGS8RM8PMCM').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6778388958302397, 0.32216110416976035]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6834911577881317, 0.3165088422118682]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["fire", -0.15799868724297003], ["round", -0.052619597477777356], ["survive", 0.041044235891268675], ["comedians", 0.040809440485898324], ["cameron", 0.01331834778644798], ["rapid", 0.0035525400316547304], ["butcher", 0.000744879563689647], ["rhea", -0.0006318882467671528], ["questioning", -0.0006145034848772384], ["esposito", -0.0003525730178027345]], 1, exp_div);
+                exp.show([["Fire", -0.1579076951161317], ["Round", -0.06381021704225617], ["Comedians", 0.04352286024421423], ["Survive", 0.04117066362256807], ["Cameron", 0.01308303028605894], ["Rapid", 0.004428953922654681], ["Butcher", -0.0009772629996790386], ["Rhea", -0.0008170704774148536], ["Questioning", -0.0004920855895295149], ["Esposito", 0.00036774540662724386]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["fire", 60, -0.15799868724297003], ["round", 48, -0.052619597477777356], ["survive", 40, 0.041044235891268675], ["comedians", 0, 0.040809440485898324], ["cameron", 10, 0.01331834778644798], ["rapid", 54, 0.0035525400316547304], ["butcher", 32, 0.000744879563689647], ["rhea", 27, -0.0006318882467671528], ["questioning", 65, -0.0006145034848772384], ["esposito", 18, -0.0003525730178027345]], 1, "comedians cameron esposito rhea butcher survive round rapid fire questioning", raw_div, true);
+            exp.show_raw_text([["Fire", 60, -0.1579076951161317], ["Round", 48, -0.06381021704225617], ["Comedians", 0, 0.04352286024421423], ["Survive", 40, 0.04117066362256807], ["Cameron", 10, 0.01308303028605894], ["Rapid", 54, 0.004428953922654681], ["Butcher", 32, -0.0009772629996790386], ["Rhea", 27, -0.0008170704774148536], ["Questioning", 65, -0.0004920855895295149], ["Esposito", 18, 0.00036774540662724386]], 1, "Comedians Cameron Esposito Rhea Butcher Survive Round Rapid Fire Questioning", raw_div, true);
             
         </script>
         </body></html>

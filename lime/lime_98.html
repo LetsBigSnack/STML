@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divQHZQ7TN3O1DSTYI"></div>
+        <div class="lime top_div" id="top_divR9OJ7LVDHIOTE2E"></div>
         
         <script>
-        var top_div = d3.select('#top_divQHZQ7TN3O1DSTYI').classed('lime top_div', true);
+        var top_div = d3.select('#top_divR9OJ7LVDHIOTE2E').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6461401128472207, 0.3538598871527793]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6679567853936265, 0.33204321460637354]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["baby", 0.1786475771944787], ["power", -0.12900396459662883], ["big", -0.12113839904742899], ["player", -0.02654594821600819]], 1, exp_div);
+                exp.show([["Baby", 0.16184545623579566], ["Big", -0.1283006757220153], ["Power", -0.12610954097461222], ["Player", -0.021568375912646112]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["baby", 17, 0.1786475771944787], ["power", 0, -0.12900396459662883], ["big", 13, -0.12113839904742899], ["player", 6, -0.02654594821600819]], 1, "power player big baby", raw_div, true);
+            exp.show_raw_text([["Baby", 17, 0.16184545623579566], ["Big", 13, -0.1283006757220153], ["Power", 0, -0.12610954097461222], ["Player", 6, -0.021568375912646112]], 1, "Power Player Big Baby", raw_div, true);
             
         </script>
         </body></html>

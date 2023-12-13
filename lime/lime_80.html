@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div9RCY1LWTIRPKUNR"></div>
+        <div class="lime top_div" id="top_div2F59JC92RFETB2I"></div>
         
         <script>
-        var top_div = d3.select('#top_div9RCY1LWTIRPKUNR').classed('lime top_div', true);
+        var top_div = d3.select('#top_div2F59JC92RFETB2I').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.08443021877106738, 0.9155697812289326]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.04800324237500919, 0.9519967576249908]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["things", 0.23476143426590018], ["know", 0.1902211763903952], ["boston", -0.08495068161966736], ["true", 0.06966451159604387], ["university", -0.06962739699857366], ["students", -0.024960431240896495]], 1, exp_div);
+                exp.show([["Know", 0.13700829040480342], ["Things", 0.13619962459982524], ["21", 0.12352944697804907], ["Boston", -0.06452588363523325], ["University", -0.05786371768298873], ["True", 0.03417545438559066], ["Students", -0.0280630150832044]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["things", 1, 0.23476143426590018], ["know", 35, 0.1902211763903952], ["boston", 8, -0.08495068161966736], ["true", 40, 0.06966451159604387], ["university", 15, -0.06962739699857366], ["students", 26, -0.024960431240896495]], 1, " things boston university students know true", raw_div, true);
+            exp.show_raw_text([["Know", 37, 0.13700829040480342], ["Things", 3, 0.13619962459982524], ["21", 0, 0.12352944697804907], ["Boston", 10, -0.06452588363523325], ["University", 17, -0.05786371768298873], ["True", 42, 0.03417545438559066], ["Students", 28, -0.0280630150832044]], 1, "21 Things Boston University Students Know True", raw_div, true);
             
         </script>
         </body></html>

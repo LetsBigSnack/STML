@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divHTRN80C5E1G7U4X"></div>
+        <div class="lime top_div" id="top_divT0CI03K032DH2CK"></div>
         
         <script>
-        var top_div = d3.select('#top_divHTRN80C5E1G7U4X').classed('lime top_div', true);
+        var top_div = d3.select('#top_divT0CI03K032DH2CK').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.02363322768721099, 0.976366772312789]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.015961880770444692, 0.9840381192295553]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["actually", 0.08627969673873179], ["really", 0.0520898353257793], ["pleased", -0.04020366592409122], ["celebrity", 0.039344697958888765], ["see", 0.027941885869440564], ["men", 0.022566591528977154]], 1, exp_div);
+                exp.show([["Actually", 0.060560695479363096], ["18", 0.04222312810055271], ["Really", 0.035387747385671485], ["Pleased", -0.031902246265843856], ["Celebrity", 0.022879462764514583], ["See", 0.02001828558247593], ["Men", 0.009022109749970903]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["actually", 15, 0.08627969673873179], ["really", 24, 0.0520898353257793], ["pleased", 31, -0.04020366592409122], ["celebrity", 1, 0.039344697958888765], ["see", 39, 0.027941885869440564], ["men", 11, 0.022566591528977154]], 1, " celebrity men actually really pleased see", raw_div, true);
+            exp.show_raw_text([["Actually", 17, 0.060560695479363096], ["18", 0, 0.04222312810055271], ["Really", 26, 0.035387747385671485], ["Pleased", 33, -0.031902246265843856], ["Celebrity", 3, 0.022879462764514583], ["See", 41, 0.02001828558247593], ["Men", 13, 0.009022109749970903]], 1, "18 Celebrity Men Actually Really Pleased See", raw_div, true);
             
         </script>
         </body></html>

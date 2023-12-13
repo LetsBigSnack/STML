@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divR3Z2TTC9TSV6FVD"></div>
+        <div class="lime top_div" id="top_divOR3281X8HJGMA43"></div>
         
         <script>
-        var top_div = d3.select('#top_divR3Z2TTC9TSV6FVD').classed('lime top_div', true);
+        var top_div = d3.select('#top_divOR3281X8HJGMA43').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.16636707604104994, 0.8336329239589501]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.15523984409888358, 0.8447601559011164]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["best", 0.1888180040116415], ["ever", 0.13590971345324063], ["party", -0.06062528695555876], ["slumber", -0.027956370147699947], ["throw", -0.017023406043391153], ["diys", -0.008016454338748235], ["help", 0.0036560697222206163]], 1, exp_div);
+                exp.show([["Best", 0.15246544584817912], ["Ever", 0.12285131072010004], ["Party", -0.05947628741662486], ["31", 0.05849286341122103], ["Slumber", -0.027847175185818605], ["Throw", -0.017944679209469964], ["DIYs", -0.011500801634571081], ["Help", -0.0031017095676208317]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["best", 17, 0.1888180040116415], ["ever", 36, 0.13590971345324063], ["party", 30, -0.06062528695555876], ["slumber", 22, -0.027956370147699947], ["throw", 11, -0.017023406043391153], ["diys", 1, -0.008016454338748235], ["help", 6, 0.0036560697222206163]], 1, " diys help throw best slumber party ever", raw_div, true);
+            exp.show_raw_text([["Best", 19, 0.15246544584817912], ["Ever", 38, 0.12285131072010004], ["Party", 32, -0.05947628741662486], ["31", 0, 0.05849286341122103], ["Slumber", 24, -0.027847175185818605], ["Throw", 13, -0.017944679209469964], ["DIYs", 3, -0.011500801634571081], ["Help", 8, -0.0031017095676208317]], 1, "31 DIYs Help Throw Best Slumber Party Ever", raw_div, true);
             
         </script>
         </body></html>

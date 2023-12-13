@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divMR4CULOOL1N6L8D"></div>
+        <div class="lime top_div" id="top_divSY3U5PT5FMZ8VMZ"></div>
         
         <script>
-        var top_div = d3.select('#top_divMR4CULOOL1N6L8D').classed('lime top_div', true);
+        var top_div = d3.select('#top_divSY3U5PT5FMZ8VMZ').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7460310855833484, 0.2539689144166516]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7407505141314956, 0.2592494858685043]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["journalists", -0.09418734301699513], ["fiji", -0.07425640061290274], ["deported", 0.008208329215513526]], 1, exp_div);
+                exp.show([["Journalists", -0.09411450984544201], ["Fiji", -0.07347193886173735], ["deported", 0.013111881196812045]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["journalists", 0, -0.09418734301699513], ["fiji", 21, -0.07425640061290274], ["deported", 12, 0.008208329215513526]], 1, "journalists deported fiji", raw_div, true);
+            exp.show_raw_text([["Journalists", 0, -0.09411450984544201], ["Fiji", 21, -0.07347193886173735], ["deported", 12, 0.013111881196812045]], 1, "Journalists deported Fiji", raw_div, true);
             
         </script>
         </body></html>

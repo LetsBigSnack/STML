@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divX8JJP18TFWLV52N"></div>
+        <div class="lime top_div" id="top_div74TUJPUF1Q2MGMD"></div>
         
         <script>
-        var top_div = d3.select('#top_divX8JJP18TFWLV52N').classed('lime top_div', true);
+        var top_div = d3.select('#top_div74TUJPUF1Q2MGMD').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6789772894348389, 0.32102271056516113]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6844155120999031, 0.3155844879000968]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["six", -0.08291897055936295], ["politicians", -0.042622938327075026], ["homes", 0.031026406925890763], ["minnesota", -0.023928125109875586], ["vandalized", -0.001387470330904666]], 1, exp_div);
+                exp.show([["six", -0.07741847046362739], ["politicians", -0.03900113659897311], ["Minnesota", -0.025482398187487907], ["Homes", 0.017356859216971707], ["vandalized", -0.0012197732156457482]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["six", 6, -0.08291897055936295], ["politicians", 20, -0.042622938327075026], ["homes", 0, 0.031026406925890763], ["minnesota", 10, -0.023928125109875586], ["vandalized", 32, -0.001387470330904666]], 1, "homes six minnesota politicians vandalized", raw_div, true);
+            exp.show_raw_text([["six", 6, -0.07741847046362739], ["politicians", 20, -0.03900113659897311], ["Minnesota", 10, -0.025482398187487907], ["Homes", 0, 0.017356859216971707], ["vandalized", 32, -0.0012197732156457482]], 1, "Homes six Minnesota politicians vandalized", raw_div, true);
             
         </script>
         </body></html>

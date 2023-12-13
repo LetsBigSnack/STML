@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div3BKM0MLS6MD2XZQ"></div>
+        <div class="lime top_div" id="top_divVHT0BXONUBINOHU"></div>
         
         <script>
-        var top_div = d3.select('#top_div3BKM0MLS6MD2XZQ').classed('lime top_div', true);
+        var top_div = d3.select('#top_divVHT0BXONUBINOHU').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.937269647074539, 0.06273035292546106]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.9303990753112126, 0.06960092468878737]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["us", -0.101923967461363], ["crash", -0.06574654950013718], ["million", -0.06260825291401695], ["involved", 0.01574931988591644], ["car", -0.015237739804379641], ["sued", 0.012259265918096894], ["singer", 0.009986110852512971], ["fatal", -0.0023974854466185663], ["brandy", -0.0015201190552099474]], 1, exp_div);
+                exp.show([["US", -0.10514535666038119], ["crash", -0.06887536190905827], ["million", -0.06630492526388977], ["50", 0.01981345219738724], ["car", -0.01844950142518507], ["involved", 0.011323933045522927], ["sued", 0.009272490686504391], ["Singer", 0.007280889570991734], ["fatal", -0.005130553778247231], ["Brandy", -0.0004291715262384078]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["us", 0, -0.101923967461363], ["crash", 36, -0.06574654950013718], ["million", 47, -0.06260825291401695], ["involved", 17, 0.01574931988591644], ["car", 32, -0.015237739804379641], ["sued", 42, 0.012259265918096894], ["singer", 3, 0.009986110852512971], ["fatal", 26, -0.0023974854466185663], ["brandy", 10, -0.0015201190552099474]], 1, "us singer brandy involved fatal car crash sued million", raw_div, true);
+            exp.show_raw_text([["US", 0, -0.10514535666038119], ["crash", 36, -0.06887536190905827], ["million", 50, -0.06630492526388977], ["50", 47, 0.01981345219738724], ["car", 32, -0.01844950142518507], ["involved", 17, 0.011323933045522927], ["sued", 42, 0.009272490686504391], ["Singer", 3, 0.007280889570991734], ["fatal", 26, -0.005130553778247231], ["Brandy", 10, -0.0004291715262384078]], 1, "US Singer Brandy involved fatal car crash sued 50 million", raw_div, true);
             
         </script>
         </body></html>

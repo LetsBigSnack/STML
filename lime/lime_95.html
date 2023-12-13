@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divA28N43X2WT5KO3E"></div>
+        <div class="lime top_div" id="top_divTJ4DSPBY4IVRNL4"></div>
         
         <script>
-        var top_div = d3.select('#top_divA28N43X2WT5KO3E').classed('lime top_div', true);
+        var top_div = d3.select('#top_divTJ4DSPBY4IVRNL4').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8809137427996492, 0.11908625720035078]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.763888942450277, 0.23611105754972292]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["million", -0.10114056065673512], ["profit", -0.08545636878937049], ["texas", -0.06821008812934726], ["instruments", 0.037117385107776], ["posts", 0.01182930116943003], ["quarterly", -0.009076096023490644]], 1, exp_div);
+                exp.show([["17", 0.21849806076118708], ["Million", -0.14549241394324877], ["Profit", -0.13119727749049015], ["Texas", -0.09971195320001656], ["Quarterly", -0.03982272915527961], ["Posts", -0.019752402478403843], ["Instruments", 0.019459685363215642]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["million", 24, -0.10114056065673512], ["profit", 42, -0.08545636878937049], ["texas", 0, -0.06821008812934726], ["instruments", 6, 0.037117385107776], ["posts", 18, 0.01182930116943003], ["quarterly", 32, -0.009076096023490644]], 1, "texas instruments posts million quarterly profit", raw_div, true);
+            exp.show_raw_text([["17", 24, 0.21849806076118708], ["Million", 27, -0.14549241394324877], ["Profit", 45, -0.13119727749049015], ["Texas", 0, -0.09971195320001656], ["Quarterly", 35, -0.03982272915527961], ["Posts", 18, -0.019752402478403843], ["Instruments", 6, 0.019459685363215642]], 1, "Texas Instruments Posts 17 Million Quarterly Profit", raw_div, true);
             
         </script>
         </body></html>

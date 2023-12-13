@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div6JFF48S4P5AI2OQ"></div>
+        <div class="lime top_div" id="top_div482HU7RRAMAN5XS"></div>
         
         <script>
-        var top_div = d3.select('#top_div6JFF48S4P5AI2OQ').classed('lime top_div', true);
+        var top_div = d3.select('#top_div482HU7RRAMAN5XS').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.06903849033720588, 0.9309615096627941]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.060861660042655474, 0.9391383399573445]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["people", 0.16081095401741283], ["love", 0.11067367903308378], ["stationery", -0.04894991743536521], ["fucking", 0.04243826088558391], ["presents", -0.026771010528104527]], 1, exp_div);
+                exp.show([["People", 0.12574370283746], ["Love", 0.08591482401342485], ["25", 0.04685252138974752], ["Stationery", -0.04668196539629172], ["Fucking", 0.030925043879568875], ["Presents", -0.024602524202340274]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["people", 10, 0.16081095401741283], ["love", 25, 0.11067367903308378], ["stationery", 30, -0.04894991743536521], ["fucking", 17, 0.04243826088558391], ["presents", 1, -0.026771010528104527]], 1, " presents people fucking love stationery", raw_div, true);
+            exp.show_raw_text([["People", 12, 0.12574370283746], ["Love", 27, 0.08591482401342485], ["25", 0, 0.04685252138974752], ["Stationery", 32, -0.04668196539629172], ["Fucking", 19, 0.030925043879568875], ["Presents", 3, -0.024602524202340274]], 1, "25 Presents People Fucking Love Stationery", raw_div, true);
             
         </script>
         </body></html>

@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div5LH89IENS4US4TG"></div>
+        <div class="lime top_div" id="top_divJCE2T927BK8Y9ON"></div>
         
         <script>
-        var top_div = d3.select('#top_div5LH89IENS4US4TG').classed('lime top_div', true);
+        var top_div = d3.select('#top_divJCE2T927BK8Y9ON').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6759495146394057, 0.3240504853605944]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6733212166802085, 0.32667878331979144]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["microsoft", -0.13873970182400447], ["said", 0.06692704653562223], ["yahoo", -0.025572518192533023], ["ad", -0.020312234046774673], ["pact", -0.009934754089193329], ["weighing", 0.004579518009320367]], 1, exp_div);
+                exp.show([["Microsoft", -0.13856887584826033], ["Said", 0.06496274051635607], ["Yahoo", -0.027425721065113446], ["Ad", -0.015588181555852228], ["Pact", -0.008660048154398473], ["Weighing", 0.004889739432344018]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["microsoft", 6, -0.13873970182400447], ["said", 16, 0.06692704653562223], ["yahoo", 0, -0.025572518192533023], ["ad", 30, -0.020312234046774673], ["pact", 33, -0.009934754089193329], ["weighing", 21, 0.004579518009320367]], 1, "yahoo microsoft said weighing ad pact", raw_div, true);
+            exp.show_raw_text([["Microsoft", 6, -0.13856887584826033], ["Said", 16, 0.06496274051635607], ["Yahoo", 0, -0.027425721065113446], ["Ad", 30, -0.015588181555852228], ["Pact", 33, -0.008660048154398473], ["Weighing", 21, 0.004889739432344018]], 1, "Yahoo Microsoft Said Weighing Ad Pact", raw_div, true);
             
         </script>
         </body></html>

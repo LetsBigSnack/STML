@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divFEJLTY3MD7IVCYW"></div>
+        <div class="lime top_div" id="top_divB4Y7POXY1WSERPP"></div>
         
         <script>
-        var top_div = d3.select('#top_divFEJLTY3MD7IVCYW').classed('lime top_div', true);
+        var top_div = d3.select('#top_divB4Y7POXY1WSERPP').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.16654345890980815, 0.8334565410901918]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.17306921637129458, 0.8269307836287054]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["ever", 0.15329730437264316], ["youll", 0.12756031836474685], ["league", -0.11706304447573931], ["quiz", 0.10524938733292537], ["premier", -0.1040726066226197], ["take", 0.04302682318558265], ["hardest", 0.024992673622724868], ["badge", 0.0009940492287592243]], 1, exp_div);
+                exp.show([["Ever", 0.15247666794022588], ["Youll", 0.11502216517609253], ["League", -0.11003634710196443], ["Quiz", 0.10993441410951091], ["Premier", -0.10502220634907816], ["Take", 0.03553763504860598], ["Hardest", 0.02451011708469083], ["Badge", 0.0010130162422110475]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["ever", 40, 0.15329730437264316], ["youll", 34, 0.12756031836474685], ["league", 16, -0.11706304447573931], ["quiz", 29, 0.10524938733292537], ["premier", 8, -0.1040726066226197], ["take", 45, 0.04302682318558265], ["hardest", 0, 0.024992673622724868], ["badge", 23, 0.0009940492287592243]], 1, "hardest premier league badge quiz youll ever take", raw_div, true);
+            exp.show_raw_text([["Ever", 40, 0.15247666794022588], ["Youll", 34, 0.11502216517609253], ["League", 16, -0.11003634710196443], ["Quiz", 29, 0.10993441410951091], ["Premier", 8, -0.10502220634907816], ["Take", 45, 0.03553763504860598], ["Hardest", 0, 0.02451011708469083], ["Badge", 23, 0.0010130162422110475]], 1, "Hardest Premier League Badge Quiz Youll Ever Take", raw_div, true);
             
         </script>
         </body></html>

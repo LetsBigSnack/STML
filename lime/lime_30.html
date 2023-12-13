@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divRZX0QED8F7OWB7J"></div>
+        <div class="lime top_div" id="top_div7PVTBDSG19JVGYD"></div>
         
         <script>
-        var top_div = d3.select('#top_divRZX0QED8F7OWB7J').classed('lime top_div', true);
+        var top_div = d3.select('#top_div7PVTBDSG19JVGYD').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.42309953188872984, 0.5769004681112702]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.28024957928227767, 0.7197504207177223]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["hacks", 0.11945968844820379], ["save", -0.05528782104777564], ["iphone", -0.018122845811787264], ["battery", 0.01164906619605351]], 1, exp_div);
+                exp.show([["16", 0.1950843193239504], ["Hacks", 0.06304640646124045], ["Save", -0.05831817813105794], ["iPhone", -0.03518140895355355], ["Battery", -0.016269946523953745]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["hacks", 8, 0.11945968844820379], ["save", 14, -0.05528782104777564], ["iphone", 1, -0.018122845811787264], ["battery", 19, 0.01164906619605351]], 1, " iphone hacks save battery", raw_div, true);
+            exp.show_raw_text([["16", 0, 0.1950843193239504], ["Hacks", 10, 0.06304640646124045], ["Save", 16, -0.05831817813105794], ["iPhone", 3, -0.03518140895355355], ["Battery", 21, -0.016269946523953745]], 1, "16 iPhone Hacks Save Battery", raw_div, true);
             
         </script>
         </body></html>

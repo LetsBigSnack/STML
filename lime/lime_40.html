@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divUT3H8J783WXYSPB"></div>
+        <div class="lime top_div" id="top_div11F62CP0CLJH4HS"></div>
         
         <script>
-        var top_div = d3.select('#top_divUT3H8J783WXYSPB').classed('lime top_div', true);
+        var top_div = d3.select('#top_div11F62CP0CLJH4HS').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8960739488496544, 0.10392605115034556]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.9000746476810854, 0.09992535231891461]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["us", -0.1191996834874598], ["iraqi", -0.06435939944772721], ["killing", -0.050178899197086], ["murder", -0.04156652182218629], ["marine", 0.03186550993132623], ["dropped", 0.029176601578995195], ["charge", -0.020921413307346398], ["admitted", 0.019588717830396674], ["detainee", 0.0026975052242038814]], 1, exp_div);
+                exp.show([["US", -0.12048940358873594], ["Iraqi", -0.06381870445746742], ["killing", -0.05426998722701495], ["Murder", -0.0423262474474172], ["Marine", 0.031326553574707566], ["dropped", 0.02819857643406257], ["charge", -0.0215507110337442], ["admitted", 0.018934564953033518], ["detainee", 0.0033459742454110897]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["us", 22, -0.1191996834874598], ["iraqi", 49, -0.06435939944772721], ["killing", 41, -0.050178899197086], ["murder", 0, -0.04156652182218629], ["marine", 25, 0.03186550993132623], ["dropped", 14, 0.029176601578995195], ["charge", 7, -0.020921413307346398], ["admitted", 32, 0.019588717830396674], ["detainee", 55, 0.0026975052242038814]], 1, "murder charge dropped us marine admitted killing iraqi detainee", raw_div, true);
+            exp.show_raw_text([["US", 22, -0.12048940358873594], ["Iraqi", 49, -0.06381870445746742], ["killing", 41, -0.05426998722701495], ["Murder", 0, -0.0423262474474172], ["Marine", 25, 0.031326553574707566], ["dropped", 14, 0.02819857643406257], ["charge", 7, -0.0215507110337442], ["admitted", 32, 0.018934564953033518], ["detainee", 55, 0.0033459742454110897]], 1, "Murder charge dropped US Marine admitted killing Iraqi detainee", raw_div, true);
             
         </script>
         </body></html>

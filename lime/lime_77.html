@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div3O1HI69M821T7TS"></div>
+        <div class="lime top_div" id="top_div8MV6VLNCJVNV60J"></div>
         
         <script>
-        var top_div = d3.select('#top_div3O1HI69M821T7TS').classed('lime top_div', true);
+        var top_div = d3.select('#top_div8MV6VLNCJVNV60J').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.822681830365974, 0.17731816963402597]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8265220018241917, 0.17347799817580828]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["former", -0.12054589372139453], ["journalist", -0.04530965360212477], ["admits", -0.039810544870446905], ["ukranian", 0.023966044426328197], ["official", -0.02167020946964945], ["murdering", 0.012724981286319605]], 1, exp_div);
+                exp.show([["former", -0.12253363051587615], ["journalist", -0.04324841212626625], ["admits", -0.040572900485526635], ["Ukranian", 0.02568300181361658], ["official", -0.024574019201472827], ["murdering", 0.013164918850191228]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["former", 9, -0.12054589372139453], ["journalist", 42, -0.04530965360212477], ["admits", 25, -0.039810544870446905], ["ukranian", 0, 0.023966044426328197], ["official", 16, -0.02167020946964945], ["murdering", 32, 0.012724981286319605]], 1, "ukranian former official admits murdering journalist", raw_div, true);
+            exp.show_raw_text([["former", 9, -0.12253363051587615], ["journalist", 42, -0.04324841212626625], ["admits", 25, -0.040572900485526635], ["Ukranian", 0, 0.02568300181361658], ["official", 16, -0.024574019201472827], ["murdering", 32, 0.013164918850191228]], 1, "Ukranian former official admits murdering journalist", raw_div, true);
             
         </script>
         </body></html>

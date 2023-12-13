@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divCF2K70GMC917990"></div>
+        <div class="lime top_div" id="top_divP0CIKCLD92JM3HW"></div>
         
         <script>
-        var top_div = d3.select('#top_divCF2K70GMC917990').classed('lime top_div', true);
+        var top_div = d3.select('#top_divP0CIKCLD92JM3HW').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.3483773798501757, 0.6516226201498243]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.37050527439764613, 0.6294947256023539]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["many", 0.06612231231108204], ["seen", 0.05823323600790953], ["awardwinning", -0.05232557566614688], ["tv", 0.029054251661978822], ["shows", -0.011099394702876023]], 1, exp_div);
+                exp.show([["Many", 0.07006433024397486], ["Seen", 0.06344386012712533], ["AwardWinning", -0.04598652808900291], ["Shows", -0.020221207368710123], ["TV", 0.011817713556962957]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["many", 0, 0.06612231231108204], ["seen", 27, 0.05823323600790953], ["awardwinning", 5, -0.05232557566614688], ["tv", 18, 0.029054251661978822], ["shows", 21, -0.011099394702876023]], 1, "many awardwinning tv shows seen", raw_div, true);
+            exp.show_raw_text([["Many", 0, 0.07006433024397486], ["Seen", 27, 0.06344386012712533], ["AwardWinning", 5, -0.04598652808900291], ["Shows", 21, -0.020221207368710123], ["TV", 18, 0.011817713556962957]], 1, "Many AwardWinning TV Shows Seen", raw_div, true);
             
         </script>
         </body></html>

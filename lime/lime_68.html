@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divV819F775B2CHWO5"></div>
+        <div class="lime top_div" id="top_div9RVBIN9RQ6NEBJL"></div>
         
         <script>
-        var top_div = d3.select('#top_divV819F775B2CHWO5').classed('lime top_div', true);
+        var top_div = d3.select('#top_div9RVBIN9RQ6NEBJL').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.15341920361041694, 0.8465807963895831]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.11282353282230684, 0.8871764671776932]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["thatll", 0.10318704317863343], ["give", 0.08502493345123707], ["feels", 0.02614023904482414], ["rings", -0.013472489270289593], ["simple", 0.003246701551642268]], 1, exp_div);
+                exp.show([["22", 0.10440706930461671], ["Thatll", 0.05841905916165142], ["Give", 0.0538127563059205], ["Rings", -0.016979403530749202], ["Feels", 0.015108506721797494], ["Simple", -0.0067831621526747675]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["thatll", 14, 0.10318704317863343], ["give", 21, 0.08502493345123707], ["feels", 26, 0.02614023904482414], ["rings", 8, -0.013472489270289593], ["simple", 1, 0.003246701551642268]], 1, " simple rings thatll give feels", raw_div, true);
+            exp.show_raw_text([["22", 0, 0.10440706930461671], ["Thatll", 16, 0.05841905916165142], ["Give", 23, 0.0538127563059205], ["Rings", 10, -0.016979403530749202], ["Feels", 28, 0.015108506721797494], ["Simple", 3, -0.0067831621526747675]], 1, "22 Simple Rings Thatll Give Feels", raw_div, true);
             
         </script>
         </body></html>

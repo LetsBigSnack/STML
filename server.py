@@ -42,7 +42,7 @@ app = Flask(__name__, static_url_path='/static')
 ## Text - Cleaning
 
 def RemoveSpecialCharacters(sentence):
-    return re.sub('[^a-zA-Z]+',' ',sentence)
+    return re.sub('[^a-zA-Z0-9]+',' ',sentence)
 
 def ConvertToLowerCase(sentence):
     return sentence.lower()
@@ -58,14 +58,13 @@ def CleanText(sentence):
     sentence = str(sentence)
 
     # Remove stopwords
-    STOPWORDS = stopwords.words('english') + ['u', 'ü', 'ur', '4', '2', 'im', 'dont', 'doin', 'ure']
+    STOPWORDS = stopwords.words('english') + ['u', 'ü', 'ur', 'im', 'dont', 'doin', 'ure']
     # Remove punctuation
     nopunc = [char for char in sentence if char not in string.punctuation]
     nopunc = ''.join(nopunc)
     sentence = ' '.join([word for word in nopunc.split() if word.lower() not in STOPWORDS])
     sentence = ConvertAndRemove(sentence)
     return sentence
-
 
 
 

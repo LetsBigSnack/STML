@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div5EKZPRR9T5M6NH1"></div>
+        <div class="lime top_div" id="top_div4C71H3SHVKHX9VL"></div>
         
         <script>
-        var top_div = d3.select('#top_div5EKZPRR9T5M6NH1').classed('lime top_div', true);
+        var top_div = d3.select('#top_div4C71H3SHVKHX9VL').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.2052200227591955, 0.7947799772408045]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.202176754932892, 0.797823245067108]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["character", 0.431834457774545], ["project", -0.1454002987792331], ["k", 0.004897976449187613]], 1, exp_div);
+                exp.show([["Character", 0.4317788203145014], ["Project", -0.14299833483695215], ["K", 0.0051204830079134645]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["character", 0, 0.431834457774545], ["project", 12, -0.1454002987792331], ["k", 10, 0.004897976449187613]], 1, "character k project", raw_div, true);
+            exp.show_raw_text([["Character", 0, 0.4317788203145014], ["Project", 12, -0.14299833483695215], ["K", 10, 0.0051204830079134645]], 1, "Character K Project", raw_div, true);
             
         </script>
         </body></html>

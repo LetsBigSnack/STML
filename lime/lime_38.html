@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div1Y5Z5PL0KJ0ZJIQ"></div>
+        <div class="lime top_div" id="top_divUOYBX73V9ELJDO8"></div>
         
         <script>
-        var top_div = d3.select('#top_div1Y5Z5PL0KJ0ZJIQ').classed('lime top_div', true);
+        var top_div = d3.select('#top_divUOYBX73V9ELJDO8').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.020132994421786732, 0.9798670055782133]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.022350543349893393, 0.9776494566501066]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["know", 0.144224194192711], ["well", 0.07880255954596693], ["lyrics", 0.03585111498350922], ["reflection", 0.01297488384935687]], 1, exp_div);
+                exp.show([["Know", 0.1478208158909577], ["Well", 0.0808129425757296], ["Lyrics", 0.028663802946736653], ["Reflection", 0.014342585198928177]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["know", 5, 0.144224194192711], ["well", 0, 0.07880255954596693], ["lyrics", 10, 0.03585111498350922], ["reflection", 17, 0.01297488384935687]], 1, "well know lyrics reflection", raw_div, true);
+            exp.show_raw_text([["Know", 5, 0.1478208158909577], ["Well", 0, 0.0808129425757296], ["Lyrics", 10, 0.028663802946736653], ["Reflection", 17, 0.014342585198928177]], 1, "Well Know Lyrics Reflection", raw_div, true);
             
         </script>
         </body></html>

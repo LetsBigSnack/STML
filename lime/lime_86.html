@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div6DTFPKBV6KVD86T"></div>
+        <div class="lime top_div" id="top_divYDMM7IHGUB2VK33"></div>
         
         <script>
-        var top_div = d3.select('#top_div6DTFPKBV6KVD86T').classed('lime top_div', true);
+        var top_div = d3.select('#top_divYDMM7IHGUB2VK33').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.04823797069512059, 0.9517620293048794]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.07519691534087725, 0.9248030846591228]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["make", 0.0913723931133473], ["instagram", 0.06390893849405369], ["perfect", 0.05934442896344705], ["lyrics", 0.03251070942906531], ["captions", -0.019879058090178637], ["perry", -0.011614436579667011], ["seriously", -0.005737019358076067], ["katy", -0.003835343005509161]], 1, exp_div);
+                exp.show([["Make", 0.10065667853503989], ["Instagram", 0.07399979794348131], ["Perfect", 0.06733533893084558], ["Lyrics", 0.037154098707519435], ["80", -0.03262988148442579], ["Captions", -0.01749946386704874], ["Perry", -0.010112621373401206], ["Seriously", -0.004725717293751627], ["Katy", 0.0015800255606414826]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["make", 19, 0.0913723931133473], ["instagram", 42, 0.06390893849405369], ["perfect", 34, 0.05934442896344705], ["lyrics", 12, 0.03251070942906531], ["captions", 52, -0.019879058090178637], ["perry", 6, -0.011614436579667011], ["seriously", 24, -0.005737019358076067], ["katy", 1, -0.003835343005509161]], 1, " katy perry lyrics make seriously perfect instagram captions", raw_div, true);
+            exp.show_raw_text([["Make", 21, 0.10065667853503989], ["Instagram", 44, 0.07399979794348131], ["Perfect", 36, 0.06733533893084558], ["Lyrics", 14, 0.037154098707519435], ["80", 0, -0.03262988148442579], ["Captions", 54, -0.01749946386704874], ["Perry", 8, -0.010112621373401206], ["Seriously", 26, -0.004725717293751627], ["Katy", 3, 0.0015800255606414826]], 1, "80 Katy Perry Lyrics Make Seriously Perfect Instagram Captions", raw_div, true);
             
         </script>
         </body></html>

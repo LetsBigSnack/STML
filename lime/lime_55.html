@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divP1YN2GNZCHQ74QU"></div>
+        <div class="lime top_div" id="top_divLSZCM8V1BHXPLPV"></div>
         
         <script>
-        var top_div = d3.select('#top_divP1YN2GNZCHQ74QU').classed('lime top_div', true);
+        var top_div = d3.select('#top_divLSZCM8V1BHXPLPV').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8363501879662585, 0.16364981203374154]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8371502122992274, 0.16284978770077263]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["case", -0.13628009342386144], ["medical", -0.028004574704130442], ["jail", -0.01759022871712365], ["marijuana", -0.01173876313168226], ["term", -0.007149206232762639], ["sought", 0.004371437924131927]], 1, exp_div);
+                exp.show([["Case", -0.13599802322934926], ["Medical", -0.027838514780551743], ["Jail", -0.01884320152461451], ["Marijuana", -0.011573808233356525], ["Term", -0.010035958890366004], ["Sought", 0.0048398854443233745]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["case", 35, -0.13628009342386144], ["medical", 17, -0.028004574704130442], ["jail", 0, -0.01759022871712365], ["marijuana", 25, -0.01173876313168226], ["term", 5, -0.007149206232762639], ["sought", 10, 0.004371437924131927]], 1, "jail term sought medical marijuana case", raw_div, true);
+            exp.show_raw_text([["Case", 35, -0.13599802322934926], ["Medical", 17, -0.027838514780551743], ["Jail", 0, -0.01884320152461451], ["Marijuana", 25, -0.011573808233356525], ["Term", 5, -0.010035958890366004], ["Sought", 10, 0.0048398854443233745]], 1, "Jail Term Sought Medical Marijuana Case", raw_div, true);
             
         </script>
         </body></html>

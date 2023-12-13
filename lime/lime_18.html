@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div4PUOAAI0R9MAKLN"></div>
+        <div class="lime top_div" id="top_divE2NPZARI131EJYQ"></div>
         
         <script>
-        var top_div = d3.select('#top_div4PUOAAI0R9MAKLN').classed('lime top_div', true);
+        var top_div = d3.select('#top_divE2NPZARI131EJYQ').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.5722483578409892, 0.4277516421590108]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.3632273979009004, 0.6367726020990996]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["wales", -0.0872104168024269], ["breathtakingly", 0.03266873511111503], ["locations", 0.009516239549130653], ["photographic", 3.5614290711838305e-05]], 1, exp_div);
+                exp.show([["18", 0.2612583213566541], ["Wales", -0.10148118799783253], ["Locations", -0.03630890385609943], ["Breathtakingly", -0.027504601299185503], ["Photographic", 0.0006380388211856329]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["wales", 39, -0.0872104168024269], ["breathtakingly", 1, 0.03266873511111503], ["locations", 29, 0.009516239549130653], ["photographic", 16, 3.5614290711838305e-05]], 1, " breathtakingly photographic locations wales", raw_div, true);
+            exp.show_raw_text([["18", 0, 0.2612583213566541], ["Wales", 41, -0.10148118799783253], ["Locations", 31, -0.03630890385609943], ["Breathtakingly", 3, -0.027504601299185503], ["Photographic", 18, 0.0006380388211856329]], 1, "18 Breathtakingly Photographic Locations Wales", raw_div, true);
             
         </script>
         </body></html>

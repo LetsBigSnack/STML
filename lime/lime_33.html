@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divJD60Z7GJLGHFDRG"></div>
+        <div class="lime top_div" id="top_divANGSMJRBS1OYRYR"></div>
         
         <script>
-        var top_div = d3.select('#top_divJD60Z7GJLGHFDRG').classed('lime top_div', true);
+        var top_div = d3.select('#top_divANGSMJRBS1OYRYR').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.2905971285822009, 0.7094028714177991]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.18794843024682584, 0.8120515697531742]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["beautifully", 0.07131746525190354], ["types", 0.04932698572750203], ["illustrated", 0.03604658040789358], ["boglins", 0.003289718637137628], ["hangovers", 0.0023512278750905257]], 1, exp_div);
+                exp.show([["22", 0.1640711791180949], ["Beautifully", 0.02175316539528598], ["Types", 0.013072338971577892], ["Illustrated", 0.004871339430999878], ["Hangovers", 0.0020872555724104963], ["Boglins", 0.0014734795269482253]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["beautifully", 17, 0.07131746525190354], ["types", 1, 0.04932698572750203], ["illustrated", 29, 0.03604658040789358], ["boglins", 41, 0.003289718637137628], ["hangovers", 7, 0.0023512278750905257]], 1, " types hangovers beautifully illustrated boglins", raw_div, true);
+            exp.show_raw_text([["22", 0, 0.1640711791180949], ["Beautifully", 19, 0.02175316539528598], ["Types", 3, 0.013072338971577892], ["Illustrated", 31, 0.004871339430999878], ["Hangovers", 9, 0.0020872555724104963], ["Boglins", 43, 0.0014734795269482253]], 1, "22 Types Hangovers Beautifully Illustrated Boglins", raw_div, true);
             
         </script>
         </body></html>

@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divKZYP8QXE12V84IS"></div>
+        <div class="lime top_div" id="top_div1FUQXY8HAL7LAGZ"></div>
         
         <script>
-        var top_div = d3.select('#top_divKZYP8QXE12V84IS').classed('lime top_div', true);
+        var top_div = d3.select('#top_div1FUQXY8HAL7LAGZ').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8933312636132804, 0.10666873638671963]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8946508679608576, 0.10534913203914237]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["us", -0.1512899594869475], ["bill", -0.061450365412299306], ["passed", 0.0363747305709819], ["debt", -0.02157291936035737], ["limit", -0.012945227044268735], ["raise", -0.005298686288920969]], 1, exp_div);
+                exp.show([["US", -0.15614725157601062], ["Bill", -0.057909211106174814], ["passed", 0.036833285547445666], ["debt", -0.02031485664292576], ["limit", -0.012273356120820358], ["raise", -0.00703745705241382]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["us", 18, -0.1512899594869475], ["bill", 0, -0.061450365412299306], ["passed", 5, 0.0363747305709819], ["debt", 21, -0.02157291936035737], ["limit", 26, -0.012945227044268735], ["raise", 12, -0.005298686288920969]], 1, "bill passed raise us debt limit", raw_div, true);
+            exp.show_raw_text([["US", 18, -0.15614725157601062], ["Bill", 0, -0.057909211106174814], ["passed", 5, 0.036833285547445666], ["debt", 21, -0.02031485664292576], ["limit", 26, -0.012273356120820358], ["raise", 12, -0.00703745705241382]], 1, "Bill passed raise US debt limit", raw_div, true);
             
         </script>
         </body></html>

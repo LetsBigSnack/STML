@@ -39,23 +39,19 @@ import shap
 ## Text - Cleaning
 
 def RemoveSpecialCharacters(sentence):
-    return re.sub('[^a-zA-Z]+',' ',sentence)
-
-def ConvertToLowerCase(sentence):
-    return sentence.lower()
+    return re.sub('[^a-zA-Z0-9!?]+',' ',sentence)
 
 def ConvertAndRemove(sentence):
     sentence = str(sentence)
     sentence = RemoveSpecialCharacters(sentence)
     # convert to lower case
-    sentence = ConvertToLowerCase(sentence)
     return sentence
 
 def CleanText(sentence):
     sentence = str(sentence)
 
     # Remove stopwords
-    STOPWORDS = stopwords.words('english') + ['u', 'ü', 'ur', '4', '2', 'im', 'dont', 'doin', 'ure']
+    STOPWORDS = stopwords.words('english') + ['u', 'ü', 'ur', 'im', 'dont', 'doin', 'ure']
     # Remove punctuation
     nopunc = [char for char in sentence if char not in string.punctuation]
     nopunc = ''.join(nopunc)

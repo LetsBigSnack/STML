@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divK882OLEGVE1BIKX"></div>
+        <div class="lime top_div" id="top_divOIN4UFCFFKCI1B8"></div>
         
         <script>
-        var top_div = d3.select('#top_divK882OLEGVE1BIKX').classed('lime top_div', true);
+        var top_div = d3.select('#top_divOIN4UFCFFKCI1B8').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8266711955691317, 0.17332880443086823]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.836182703851763, 0.16381729614823703]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["attack", -0.11946203820184492], ["afghanistan", -0.11765285872353559], ["americans", 0.09093652964785195], ["die", -0.048020874410055786], ["civilian", -0.014968723160381477]], 1, exp_div);
+                exp.show([["Afghanistan", -0.11702459090351285], ["Attack", -0.11523200317749133], ["Americans", 0.0915509775793972], ["Die", -0.063334702108739], ["Civilian", -0.016776711029003428], ["3", -0.0010676405705520586]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["attack", 36, -0.11946203820184492], ["afghanistan", 24, -0.11765285872353559], ["americans", 1, 0.09093652964785195], ["die", 20, -0.048020874410055786], ["civilian", 11, -0.014968723160381477]], 1, " americans civilian die afghanistan attack", raw_div, true);
+            exp.show_raw_text([["Afghanistan", 25, -0.11702459090351285], ["Attack", 37, -0.11523200317749133], ["Americans", 2, 0.0915509775793972], ["Die", 21, -0.063334702108739], ["Civilian", 12, -0.016776711029003428], ["3", 0, -0.0010676405705520586]], 1, "3 Americans Civilian Die Afghanistan Attack", raw_div, true);
             
         </script>
         </body></html>

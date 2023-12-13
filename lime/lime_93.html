@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divN0ACKWJ2NAJ957F"></div>
+        <div class="lime top_div" id="top_divT4ZHEIGUC1EJNO3"></div>
         
         <script>
-        var top_div = d3.select('#top_divN0ACKWJ2NAJ957F').classed('lime top_div', true);
+        var top_div = d3.select('#top_divT4ZHEIGUC1EJNO3').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.18178651415142055, 0.8182134858485794]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.16330101530056407, 0.8366989846994359]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["disney", 0.17533643260281828], ["girl", 0.12192792857485178], ["channel", -0.09629647058711945], ["mean", 0.011131565671983775], ["s", 0.0025272567847372212]], 1, exp_div);
+                exp.show([["Disney", 0.14626771398778843], ["Girl", 0.10098871558348069], ["Channel", -0.0766515326384721], ["00s", 0.032603043725817654], ["Mean", 0.008653781213743031]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["disney", 3, 0.17533643260281828], ["girl", 23, 0.12192792857485178], ["channel", 10, -0.09629647058711945], ["mean", 18, 0.011131565671983775], ["s", 1, 0.0025272567847372212]], 1, " s disney channel mean girl", raw_div, true);
+            exp.show_raw_text([["Disney", 4, 0.14626771398778843], ["Girl", 24, 0.10098871558348069], ["Channel", 11, -0.0766515326384721], ["00s", 0, 0.032603043725817654], ["Mean", 19, 0.008653781213743031]], 1, "00s Disney Channel Mean Girl", raw_div, true);
             
         </script>
         </body></html>

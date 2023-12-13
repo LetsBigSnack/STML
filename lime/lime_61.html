@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divD8ORHFBM3ZA8LDK"></div>
+        <div class="lime top_div" id="top_div7BNXPTJVWEATM1U"></div>
         
         <script>
-        var top_div = d3.select('#top_divD8ORHFBM3ZA8LDK').classed('lime top_div', true);
+        var top_div = d3.select('#top_div7BNXPTJVWEATM1U').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6147211091837423, 0.3852788908162577]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6300870568456041, 0.369912943154396]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["fight", -0.05193718184526762], ["use", -0.027839998584244463], ["ready", 0.026938001324384037], ["doping", -0.02562850790793717], ["profiles", 0.024251041455053118], ["cycling", -0.015287782098940328], ["blood", -0.004859675341150527]], 1, exp_div);
+                exp.show([["Fight", -0.04956997221353228], ["Use", -0.03185356133140466], ["Doping", -0.023721268355298572], ["Profiles", 0.023048761556799274], ["Ready", 0.015351224959779367], ["Cycling", -0.01282283152143959], ["Blood", -0.004852778202859502]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["fight", 33, -0.05193718184526762], ["use", 14, -0.027839998584244463], ["ready", 8, 0.026938001324384037], ["doping", 39, -0.02562850790793717], ["profiles", 24, 0.024251041455053118], ["cycling", 0, -0.015287782098940328], ["blood", 18, -0.004859675341150527]], 1, "cycling ready use blood profiles fight doping", raw_div, true);
+            exp.show_raw_text([["Fight", 33, -0.04956997221353228], ["Use", 14, -0.03185356133140466], ["Doping", 39, -0.023721268355298572], ["Profiles", 24, 0.023048761556799274], ["Ready", 8, 0.015351224959779367], ["Cycling", 0, -0.01282283152143959], ["Blood", 18, -0.004852778202859502]], 1, "Cycling Ready Use Blood Profiles Fight Doping", raw_div, true);
             
         </script>
         </body></html>

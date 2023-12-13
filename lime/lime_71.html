@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div8ATKJWTR8NPH6SQ"></div>
+        <div class="lime top_div" id="top_divGZ4WIGQMUE9HS3W"></div>
         
         <script>
-        var top_div = d3.select('#top_div8ATKJWTR8NPH6SQ').classed('lime top_div', true);
+        var top_div = d3.select('#top_divGZ4WIGQMUE9HS3W').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.31979810029398104, 0.680201899706019]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.32513823024761823, 0.6748617697523818]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["new", -0.09987096415290496], ["kanye", 0.09190048676454331], ["album", 0.0786833420523151], ["sex", 0.06195560504479754], ["kardashians", 0.05684539421051181], ["west", -0.04569807107561109], ["kim", 0.03553306296535389], ["also", -0.028248980687755918], ["tape", -0.0200690351904631], ["references", -0.0044056519032022986]], 1, exp_div);
+                exp.show([["New", -0.1010245964617029], ["Kanye", 0.09275569983425234], ["Album", 0.07766122663406118], ["Kardashians", 0.05840373310810303], ["Sex", 0.05751547438995515], ["West", -0.0472411286833344], ["Kim", 0.0385980471055979], ["Also", -0.02904303520833544], ["Tape", -0.01985314402465106], ["References", -0.0038784363583183046]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["new", 52, -0.09987096415290496], ["kanye", 0, 0.09190048676454331], ["album", 56, 0.0786833420523151], ["sex", 43, 0.06195560504479754], ["kardashians", 31, 0.05684539421051181], ["west", 6, -0.04569807107561109], ["kim", 27, 0.03553306296535389], ["also", 11, -0.028248980687755918], ["tape", 47, -0.0200690351904631], ["references", 16, -0.0044056519032022986]], 1, "kanye west also references kim kardashians sex tape new album", raw_div, true);
+            exp.show_raw_text([["New", 52, -0.1010245964617029], ["Kanye", 0, 0.09275569983425234], ["Album", 56, 0.07766122663406118], ["Kardashians", 31, 0.05840373310810303], ["Sex", 43, 0.05751547438995515], ["West", 6, -0.0472411286833344], ["Kim", 27, 0.0385980471055979], ["Also", 11, -0.02904303520833544], ["Tape", 47, -0.01985314402465106], ["References", 16, -0.0038784363583183046]], 1, "Kanye West Also References Kim Kardashians Sex Tape New Album", raw_div, true);
             
         </script>
         </body></html>

@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div9K0VH558V35B4G1"></div>
+        <div class="lime top_div" id="top_div4S6KIKN1UK5K3JG"></div>
         
         <script>
-        var top_div = d3.select('#top_div9K0VH558V35B4G1').classed('lime top_div', true);
+        var top_div = d3.select('#top_div4S6KIKN1UK5K3JG').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.25706473801929763, 0.7429352619807024]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.2822337770052873, 0.7177662229947127]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["determine", 0.11543764195146806], ["age", -0.10988939600919499], ["true", 0.10710131295979296], ["test", 0.05363963944029936], ["picture", 0.04187669773352063], ["association", -0.03901103437864332], ["inner", -0.0037720539308172384]], 1, exp_div);
+                exp.show([["Determine", 0.12202761258847097], ["Age", -0.11770348826733346], ["True", 0.09341276109532144], ["Test", 0.06134186331613326], ["Association", -0.037041225478170466], ["Picture", 0.03319480132697182], ["Inner", -0.009921378349090737]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["determine", 25, 0.11543764195146806], ["age", 46, -0.10988939600919499], ["true", 35, 0.10710131295979296], ["test", 20, 0.05363963944029936], ["picture", 0, 0.04187669773352063], ["association", 8, -0.03901103437864332], ["inner", 40, -0.0037720539308172384]], 1, "picture association test determine true inner age", raw_div, true);
+            exp.show_raw_text([["Determine", 25, 0.12202761258847097], ["Age", 46, -0.11770348826733346], ["True", 35, 0.09341276109532144], ["Test", 20, 0.06134186331613326], ["Association", 8, -0.037041225478170466], ["Picture", 0, 0.03319480132697182], ["Inner", 40, -0.009921378349090737]], 1, "Picture Association Test Determine True Inner Age", raw_div, true);
             
         </script>
         </body></html>
