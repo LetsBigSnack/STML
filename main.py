@@ -38,9 +38,17 @@ import shap
 
 ## Text - Cleaning
 
+## Default Special Character removal
 def RemoveSpecialCharacters(sentence):
     return re.sub('[^a-zA-Z]+',' ',sentence)
 
+##Custom Character removal
+# def RemoveSpecialCharacters(sentence):
+#     return re.sub('[^a-zA-Z0-9!?]+',' ',sentence)
+
+
+
+## not converting to lower case improves the performance of the model by a small margin
 def ConvertToLowerCase(sentence):
     return sentence.lower()
 
