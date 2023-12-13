@@ -42,7 +42,7 @@ h1 {
 	background-color: var(--c-background);
 	border: var(--c-text) 1px solid;
 	padding: 1rem;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	justify-content: center;
 	align-items: center;
 	color: var(--c-background);

@@ -2,6 +2,7 @@ form {
 	display: flex;
 	flex-direction: row;
 	gap: 1rem;
+	width: 100%;
 }
 
 form input {
@@ -13,6 +14,10 @@ form input {
 	font-size: 1.5rem;
 	box-shadow: var(--c-text) 0px 0px 0px 1px inset;
 	transition: all 0.2s ease-in-out;
+}
+
+form input[type='text'] {
+	width: 100%;
 }
 
 form input[type='submit']:hover {

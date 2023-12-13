@@ -20,7 +20,7 @@ iframe {
 	width: 80vw;
 	max-width: 100%;
 	background-color: var(--c-text);
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	border: none;
 	overflow-y: auto;
 }
