@@ -26,6 +26,6 @@ python3.7 main.py
 
 # Contributions
 
-[David Kuppert](https://github.com/LetsBigSnack)
-[Felix Teutsch](https://github.com/FelixTeutsch)
-[Jonas Beer](https://github.com/jb-cc)
+- [David Kuppert](https://github.com/LetsBigSnack)
+- [Felix Teutsch](https://github.com/FelixTeutsch)
+- [Jonas Beer](https://github.com/jb-cc)
