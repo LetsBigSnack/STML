@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div5EA4OTADVSCQL0U"></div>
+        <div class="lime top_div" id="top_divHL5PZX5JSJD9O7U"></div>
         
         <script>
-        var top_div = d3.select('#top_div5EA4OTADVSCQL0U').classed('lime top_div', true);
+        var top_div = d3.select('#top_divHL5PZX5JSJD9O7U').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.5564146149225333, 0.4435853850774667]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.5499219164818854, 0.4500780835181146]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Talks", -0.09370417764344673], ["Book", 0.06341455836261706], ["Dealing", 0.05025761177903093], ["Drugs", -0.038303914111681256], ["Mitchell", -0.007479914957109258], ["Radomski", -0.0011867794236790558]], 1, exp_div);
+                exp.show([["Talks", -0.09571647628723098], ["Book", 0.06415398082225388], ["Dealing", 0.059134595372930934], ["Drugs", -0.03872235377742171], ["Mitchell", -0.007813487455894146], ["Radomski", -0.00038288860393572924]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Talks", 14, -0.09370417764344673], ["Book", 0, 0.06341455836261706], ["Dealing", 20, 0.05025761177903093], ["Dealing", 34, 0.05025761177903093], ["Drugs", 28, -0.038303914111681256], ["Mitchell", 42, -0.007479914957109258], ["Radomski", 5, -0.0011867794236790558]], 1, "Book Radomski Talks Dealing Drugs Dealing Mitchell", raw_div, true);
+            exp.show_raw_text([["Talks", 14, -0.09571647628723098], ["Book", 0, 0.06415398082225388], ["Dealing", 20, 0.059134595372930934], ["Dealing", 34, 0.059134595372930934], ["Drugs", 28, -0.03872235377742171], ["Mitchell", 42, -0.007813487455894146], ["Radomski", 5, -0.00038288860393572924]], 1, "Book Radomski Talks Dealing Drugs Dealing Mitchell", raw_div, true);
             
         </script>
         </body></html>

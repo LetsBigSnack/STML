@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divUKQT78I0E9YJIKP"></div>
+        <div class="lime top_div" id="top_divB6BNS0C1P77X11Y"></div>
         
         <script>
-        var top_div = d3.select('#top_divUKQT78I0E9YJIKP').classed('lime top_div', true);
+        var top_div = d3.select('#top_divB6BNS0C1P77X11Y').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7296451396118551, 0.2703548603881449]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7239015611468971, 0.27609843885310287]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["European", -0.15501483331662064], ["Soccer", -0.074395249768112], ["Inner", 0.048704695363536984], ["Demons", 0.034138568627723694], ["Wrestles", -0.0015512700541909234]], 1, exp_div);
+                exp.show([["European", -0.16254448743570896], ["Soccer", -0.07652313621948778], ["Inner", 0.05905114773095963], ["Demons", 0.031098851325839023], ["Wrestles", -0.0008964708588993717]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["European", 0, -0.15501483331662064], ["Soccer", 9, -0.074395249768112], ["Inner", 25, 0.048704695363536984], ["Demons", 31, 0.034138568627723694], ["Wrestles", 16, -0.0015512700541909234]], 1, "European Soccer Wrestles Inner Demons", raw_div, true);
+            exp.show_raw_text([["European", 0, -0.16254448743570896], ["Soccer", 9, -0.07652313621948778], ["Inner", 25, 0.05905114773095963], ["Demons", 31, 0.031098851325839023], ["Wrestles", 16, -0.0008964708588993717]], 1, "European Soccer Wrestles Inner Demons", raw_div, true);
             
         </script>
         </body></html>

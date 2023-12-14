@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divU2LWAZMX9C09BVO"></div>
+        <div class="lime top_div" id="top_div3DZUQYWP99QO2GM"></div>
         
         <script>
-        var top_div = d3.select('#top_divU2LWAZMX9C09BVO').classed('lime top_div', true);
+        var top_div = d3.select('#top_div3DZUQYWP99QO2GM').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.5893656933794208, 0.4106343066205792]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.5886786904018656, 0.4113213095981344]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Explosions", -0.07781688220197111], ["target", 0.019334256809064105], ["Croatia", -0.009971361310534445], ["Albanians", 0.007695777463876398], ["ethnic", 0.0024724544594386527]], 1, exp_div);
+                exp.show([["Explosions", -0.0790780478074546], ["target", 0.02148658407114373], ["Croatia", -0.010200807451385241], ["Albanians", 0.007635532916283359], ["ethnic", 0.0025524921697558296]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Explosions", 0, -0.07781688220197111], ["target", 11, 0.019334256809064105], ["Croatia", 35, -0.009971361310534445], ["Albanians", 25, 0.007695777463876398], ["ethnic", 18, 0.0024724544594386527]], 1, "Explosions target ethnic Albanians Croatia", raw_div, true);
+            exp.show_raw_text([["Explosions", 0, -0.0790780478074546], ["target", 11, 0.02148658407114373], ["Croatia", 35, -0.010200807451385241], ["Albanians", 25, 0.007635532916283359], ["ethnic", 18, 0.0025524921697558296]], 1, "Explosions target ethnic Albanians Croatia", raw_div, true);
             
         </script>
         </body></html>

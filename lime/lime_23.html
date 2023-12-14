@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div8306D0NNJBP7SGS"></div>
+        <div class="lime top_div" id="top_divSRW4LK2L3WYR288"></div>
         
         <script>
-        var top_div = d3.select('#top_div8306D0NNJBP7SGS').classed('lime top_div', true);
+        var top_div = d3.select('#top_divSRW4LK2L3WYR288').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8180528587542704, 0.1819471412457297]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.775078699433288, 0.22492130056671197]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["wins", -0.19900384687951403], ["2009", -0.07147972895622179], ["Jelena", 0.04144918453035203], ["Cincinnati", 0.026482092712880247], ["Masters", -0.0058496401236191485], ["Tennis", 0.0038917016984049225], ["Jankovi", -0.0015958823057006328]], 1, exp_div);
+                exp.show([["wins", -0.24324634096203726], ["Jelena", 0.04300469532113731], ["Cincinnati", 0.023985754804904242], ["Masters", -0.012320699034299503], ["Jankovi", -0.0014995873442677893], ["Tennis", 0.0008103672111690481]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["wins", 22, -0.19900384687951403], ["2009", 27, -0.07147972895622179], ["Jelena", 7, 0.04144918453035203], ["Cincinnati", 32, 0.026482092712880247], ["Masters", 43, -0.0058496401236191485], ["Tennis", 0, 0.0038917016984049225], ["Jankovi", 14, -0.0015958823057006328]], 1, "Tennis Jelena Jankovi wins 2009 Cincinnati Masters", raw_div, true);
+            exp.show_raw_text([["wins", 22, -0.24324634096203726], ["Jelena", 7, 0.04300469532113731], ["Cincinnati", 27, 0.023985754804904242], ["Masters", 38, -0.012320699034299503], ["Jankovi", 14, -0.0014995873442677893], ["Tennis", 0, 0.0008103672111690481]], 1, "Tennis Jelena Jankovi wins Cincinnati Masters", raw_div, true);
             
         </script>
         </body></html>

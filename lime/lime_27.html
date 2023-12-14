@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div3F7BS4E29DDFNPW"></div>
+        <div class="lime top_div" id="top_div5ECICZIYBI126K5"></div>
         
         <script>
-        var top_div = d3.select('#top_div3F7BS4E29DDFNPW').classed('lime top_div', true);
+        var top_div = d3.select('#top_div5ECICZIYBI126K5').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.08522294952376586, 0.9147770504762341]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.1399907079839663, 0.8600092920160337]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["18", 0.1203542049645937], ["Try", 0.0760316403573594], ["Awesome", 0.044325424087380154], ["Holiday", 0.02715452147554887], ["Traditions", -0.0238435188288421], ["Family", -0.02084456863805037], ["Year", 0.00015136322070432977]], 1, exp_div);
+                exp.show([["Try", 0.11272964876963204], ["Awesome", 0.07912854437761462], ["Holiday", 0.050166946408545694], ["Family", -0.02498558910264779], ["Traditions", -0.017335897689543536], ["Year", 0.011789836026265196]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["18", 0, 0.1203542049645937], ["Try", 37, 0.0760316403573594], ["Awesome", 3, 0.044325424087380154], ["Holiday", 11, 0.02715452147554887], ["Traditions", 19, -0.0238435188288421], ["Family", 30, -0.02084456863805037], ["Year", 41, 0.00015136322070432977]], 1, "18 Awesome Holiday Traditions Family Try Year", raw_div, true);
+            exp.show_raw_text([["Try", 35, 0.11272964876963204], ["Awesome", 1, 0.07912854437761462], ["Holiday", 9, 0.050166946408545694], ["Family", 28, -0.02498558910264779], ["Traditions", 17, -0.017335897689543536], ["Year", 39, 0.011789836026265196]], 1, " Awesome Holiday Traditions Family Try Year", raw_div, true);
             
         </script>
         </body></html>

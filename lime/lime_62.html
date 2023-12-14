@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divSOV7ZI4GEYTP3HJ"></div>
+        <div class="lime top_div" id="top_divN41PKWGGF9IX34O"></div>
         
         <script>
-        var top_div = d3.select('#top_divSOV7ZI4GEYTP3HJ').classed('lime top_div', true);
+        var top_div = d3.select('#top_divN41PKWGGF9IX34O').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8683274688819227, 0.1316725311180773]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8601624500459224, 0.13983754995407757]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["bomb", -0.10704970701413538], ["returned", 0.06218627709201571], ["suspect", -0.058834061297710176], ["London", -0.05820889471137345], ["Italy", -0.043195302043614575]], 1, exp_div);
+                exp.show([["bomb", -0.10842955446771077], ["returned", 0.06334318865714199], ["suspect", -0.05717535569806686], ["London", -0.051067611332770706], ["Italy", -0.04543782581353403]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["bomb", 7, -0.10704970701413538], ["returned", 20, 0.06218627709201571], ["suspect", 12, -0.058834061297710176], ["London", 0, -0.05820889471137345], ["Italy", 29, -0.043195302043614575]], 1, "London bomb suspect returned Italy", raw_div, true);
+            exp.show_raw_text([["bomb", 7, -0.10842955446771077], ["returned", 20, 0.06334318865714199], ["suspect", 12, -0.05717535569806686], ["London", 0, -0.051067611332770706], ["Italy", 29, -0.04543782581353403]], 1, "London bomb suspect returned Italy", raw_div, true);
             
         </script>
         </body></html>

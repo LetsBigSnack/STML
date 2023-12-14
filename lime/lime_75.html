@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div5WJKY4W5GWKOFZ1"></div>
+        <div class="lime top_div" id="top_divKLRJYNIMDJZUJ0P"></div>
         
         <script>
-        var top_div = d3.select('#top_div5WJKY4W5GWKOFZ1').classed('lime top_div', true);
+        var top_div = d3.select('#top_divKLRJYNIMDJZUJ0P').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.15730886027908875, 0.8426911397209113]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.21632744653132352, 0.7836725534686765]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Reasons", 0.15797356949939986], ["22", 0.1531004128981781], ["Earth", -0.04931229103305177], ["Eggs", -0.0442928278251084], ["Banished", 0.0017504682180312934]], 1, exp_div);
+                exp.show([["Reasons", 0.3111286046827543], ["Earth", -0.050700634202288625], ["Eggs", -0.029377971852880765], ["Banished", 0.006237440229372741]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Reasons", 3, 0.15797356949939986], ["22", 0, 0.1531004128981781], ["Earth", 25, -0.04931229103305177], ["Eggs", 11, -0.0442928278251084], ["Banished", 16, 0.0017504682180312934]], 1, "22 Reasons Eggs Banished Earth", raw_div, true);
+            exp.show_raw_text([["Reasons", 1, 0.3111286046827543], ["Earth", 23, -0.050700634202288625], ["Eggs", 9, -0.029377971852880765], ["Banished", 14, 0.006237440229372741]], 1, " Reasons Eggs Banished Earth", raw_div, true);
             
         </script>
         </body></html>

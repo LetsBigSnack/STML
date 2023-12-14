@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div2PJG0JG7TK4LQ4C"></div>
+        <div class="lime top_div" id="top_divTS0R2J3M43TR53Z"></div>
         
         <script>
-        var top_div = d3.select('#top_div2PJG0JG7TK4LQ4C').classed('lime top_div', true);
+        var top_div = d3.select('#top_divTS0R2J3M43TR53Z').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.010192806971590085, 0.9898071930284099]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.009968089428550875, 0.9900319105714491]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Know", 0.06224925104670209], ["Based", 0.049547844843454404], ["Name", 0.01879621709874534], ["Dog", 0.01255631567604269], ["Sign", 0.008531294605904138]], 1, exp_div);
+                exp.show([["Know", 0.061256093523371705], ["Based", 0.04827689336306333], ["Name", 0.018379739849967745], ["Dog", 0.01214304393969666], ["Sign", 0.006636023163544036]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Know", 0, 0.06224925104670209], ["Based", 14, 0.049547844843454404], ["Name", 5, 0.01879621709874534], ["Dog", 10, 0.01255631567604269], ["Sign", 20, 0.008531294605904138]], 1, "Know Name Dog Based Sign", raw_div, true);
+            exp.show_raw_text([["Know", 0, 0.061256093523371705], ["Based", 14, 0.04827689336306333], ["Name", 5, 0.018379739849967745], ["Dog", 10, 0.01214304393969666], ["Sign", 20, 0.006636023163544036]], 1, "Know Name Dog Based Sign", raw_div, true);
             
         </script>
         </body></html>

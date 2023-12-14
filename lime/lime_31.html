@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divD3DV5TG3X6J3FX0"></div>
+        <div class="lime top_div" id="top_divYMNOWVSDEP8U4H6"></div>
         
         <script>
-        var top_div = d3.select('#top_divD3DV5TG3X6J3FX0').classed('lime top_div', true);
+        var top_div = d3.select('#top_divYMNOWVSDEP8U4H6').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.17247822402651802, 0.827521775973482]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.15605637769037717, 0.8439436223096228]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Questions", 0.13638591321780286], ["Pretty", 0.05205200083635507], ["Little", 0.030350896269765008], ["Liars", -0.024613518646120283]], 1, exp_div);
+                exp.show([["Questions", 0.14476243988535312], ["Pretty", 0.0494480039552597], ["Little", 0.03133992614445971], ["Liars", -0.025716973552981522]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Questions", 0, 0.13638591321780286], ["Pretty", 10, 0.05205200083635507], ["Little", 17, 0.030350896269765008], ["Liars", 24, -0.024613518646120283]], 1, "Questions Pretty Little Liars", raw_div, true);
+            exp.show_raw_text([["Questions", 0, 0.14476243988535312], ["Pretty", 10, 0.0494480039552597], ["Little", 17, 0.03133992614445971], ["Liars", 24, -0.025716973552981522]], 1, "Questions Pretty Little Liars", raw_div, true);
             
         </script>
         </body></html>

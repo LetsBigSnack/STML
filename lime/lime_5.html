@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div1HP2N2QD2EC8NAD"></div>
+        <div class="lime top_div" id="top_div9MIYC8ATXZP1P00"></div>
         
         <script>
-        var top_div = d3.select('#top_div1HP2N2QD2EC8NAD').classed('lime top_div', true);
+        var top_div = d3.select('#top_div9MIYC8ATXZP1P00').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.21597708956124229, 0.7840229104387577]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.2775979610830469, 0.7224020389169531]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["24", 0.12453793940210177], ["Beautiful", 0.1038906611528829], ["Tattoos", 0.0855123066605982], ["Away", -0.050074909733939875], ["Spirited", -0.03592978761815465], ["Face", -0.028104067873663572], ["Featuring", -0.02262471172362861], ["Hauntingly", 0.0004978564319558477]], 1, exp_div);
+                exp.show([["Beautiful", 0.14944409252914936], ["Tattoos", 0.1251739985932627], ["Away", -0.051402518182355694], ["Spirited", -0.030255389592270115], ["Face", -0.024663225848269035], ["Featuring", -0.017056045987621313], ["Hauntingly", 0.0009794712736656752]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["24", 0, 0.12453793940210177], ["Beautiful", 14, 0.1038906611528829], ["Tattoos", 24, 0.0855123066605982], ["Away", 56, -0.050074909733939875], ["Spirited", 47, -0.03592978761815465], ["Face", 42, -0.028104067873663572], ["Featuring", 32, -0.02262471172362861], ["Hauntingly", 3, 0.0004978564319558477]], 1, "24 Hauntingly Beautiful Tattoos Featuring Face Spirited Away", raw_div, true);
+            exp.show_raw_text([["Beautiful", 12, 0.14944409252914936], ["Tattoos", 22, 0.1251739985932627], ["Away", 54, -0.051402518182355694], ["Spirited", 45, -0.030255389592270115], ["Face", 40, -0.024663225848269035], ["Featuring", 30, -0.017056045987621313], ["Hauntingly", 1, 0.0009794712736656752]], 1, " Hauntingly Beautiful Tattoos Featuring Face Spirited Away", raw_div, true);
             
         </script>
         </body></html>

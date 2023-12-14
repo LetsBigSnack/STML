@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divNYT68XH39ZTWW22"></div>
+        <div class="lime top_div" id="top_divXNQ158T8EUP89S9"></div>
         
         <script>
-        var top_div = d3.select('#top_divNYT68XH39ZTWW22').classed('lime top_div', true);
+        var top_div = d3.select('#top_divXNQ158T8EUP89S9').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8807099123185318, 0.1192900876814682]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8794287405195753, 0.1205712594804247]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["US", -0.15104833190874772], ["Report", -0.08871665385298114], ["Officials", -0.0610720030722676], ["Wiretapping", 0.041188741922337395], ["Value", 0.029585209015793052], ["Limited", 0.02034238164630303]], 1, exp_div);
+                exp.show([["US", -0.14689334554470637], ["Report", -0.09200609611795817], ["Officials", -0.06364826246318031], ["Wiretapping", 0.041511483152404584], ["Value", 0.03155646701294379], ["Limited", 0.019437437597340616]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["US", 0, -0.15104833190874772], ["Report", 39, -0.08871665385298114], ["Officials", 29, -0.0610720030722676], ["Wiretapping", 3, 0.041188741922337395], ["Value", 23, 0.029585209015793052], ["Limited", 15, 0.02034238164630303]], 1, "US Wiretapping Limited Value Officials Report", raw_div, true);
+            exp.show_raw_text([["US", 0, -0.14689334554470637], ["Report", 39, -0.09200609611795817], ["Officials", 29, -0.06364826246318031], ["Wiretapping", 3, 0.041511483152404584], ["Value", 23, 0.03155646701294379], ["Limited", 15, 0.019437437597340616]], 1, "US Wiretapping Limited Value Officials Report", raw_div, true);
             
         </script>
         </body></html>

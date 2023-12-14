@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divG4CVZ5AUL1VNA0J"></div>
+        <div class="lime top_div" id="top_divO1QA5I6K1O984IE"></div>
         
         <script>
-        var top_div = d3.select('#top_divG4CVZ5AUL1VNA0J').classed('lime top_div', true);
+        var top_div = d3.select('#top_divO1QA5I6K1O984IE').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8163504310609149, 0.18364956893908507]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8130215207507878, 0.18697847924921215]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Win", -0.13068162220295618], ["Title", -0.057760507445793585], ["Nadal", -0.006892625513239755], ["Tames", -0.0014755637387486042], ["Wind", -0.0013346081110140202], ["Another", -0.0005526911662154512]], 1, exp_div);
+                exp.show([["Win", -0.12880459968322705], ["Title", -0.05873000678828471], ["Nadal", -0.006761669595745537], ["Wind", -0.0017907999726005947], ["Another", 0.0017798149086869835], ["Tames", -0.0014556948154653131]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Win", 17, -0.13068162220295618], ["Title", 29, -0.057760507445793585], ["Nadal", 0, -0.006892625513239755], ["Tames", 6, -0.0014755637387486042], ["Wind", 12, -0.0013346081110140202], ["Another", 21, -0.0005526911662154512]], 1, "Nadal Tames Wind Win Another Title", raw_div, true);
+            exp.show_raw_text([["Win", 17, -0.12880459968322705], ["Title", 29, -0.05873000678828471], ["Nadal", 0, -0.006761669595745537], ["Wind", 12, -0.0017907999726005947], ["Another", 21, 0.0017798149086869835], ["Tames", 6, -0.0014556948154653131]], 1, "Nadal Tames Wind Win Another Title", raw_div, true);
             
         </script>
         </body></html>

@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divKFGLR7MRDWT1ZCG"></div>
+        <div class="lime top_div" id="top_divGICVXY10WTTWIO7"></div>
         
         <script>
-        var top_div = d3.select('#top_divKFGLR7MRDWT1ZCG').classed('lime top_div', true);
+        var top_div = d3.select('#top_divGICVXY10WTTWIO7').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.16086015929443775, 0.8391398407055622]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.15925668616262423, 0.8407433138373758]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Guess", 0.1963000072656651], ["Movie", 0.11549005537116681], ["Nominated", -0.05418955976465738], ["Short", -0.04105870991185111], ["Oscar", 0.011440853939517402], ["Clip", -0.00949440580648206]], 1, exp_div);
+                exp.show([["Guess", 0.19598692609117424], ["Movie", 0.11536760983445442], ["Nominated", -0.05409735835353296], ["Short", -0.041247338687287444], ["Oscar", 0.014915277700277863], ["Clip", -0.00850870597665896]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Guess", 0, 0.1963000072656651], ["Movie", 22, 0.11549005537116681], ["Nominated", 12, -0.05418955976465738], ["Short", 28, -0.04105870991185111], ["Oscar", 6, 0.011440853939517402], ["Clip", 34, -0.00949440580648206]], 1, "Guess Oscar Nominated Movie Short Clip", raw_div, true);
+            exp.show_raw_text([["Guess", 0, 0.19598692609117424], ["Movie", 22, 0.11536760983445442], ["Nominated", 12, -0.05409735835353296], ["Short", 28, -0.041247338687287444], ["Oscar", 6, 0.014915277700277863], ["Clip", 34, -0.00850870597665896]], 1, "Guess Oscar Nominated Movie Short Clip", raw_div, true);
             
         </script>
         </body></html>

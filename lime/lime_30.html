@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div7PVTBDSG19JVGYD"></div>
+        <div class="lime top_div" id="top_divFW2NY2Y2IGQ416N"></div>
         
         <script>
-        var top_div = d3.select('#top_div7PVTBDSG19JVGYD').classed('lime top_div', true);
+        var top_div = d3.select('#top_divFW2NY2Y2IGQ416N').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.28024957928227767, 0.7197504207177223]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.4225217068955347, 0.5774782931044653]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["16", 0.1950843193239504], ["Hacks", 0.06304640646124045], ["Save", -0.05831817813105794], ["iPhone", -0.03518140895355355], ["Battery", -0.016269946523953745]], 1, exp_div);
+                exp.show([["Hacks", 0.11918910900405223], ["Save", -0.05479021487339019], ["iPhone", -0.017445106182882815], ["Battery", 0.0116215680019729]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["16", 0, 0.1950843193239504], ["Hacks", 10, 0.06304640646124045], ["Save", 16, -0.05831817813105794], ["iPhone", 3, -0.03518140895355355], ["Battery", 21, -0.016269946523953745]], 1, "16 iPhone Hacks Save Battery", raw_div, true);
+            exp.show_raw_text([["Hacks", 8, 0.11918910900405223], ["Save", 14, -0.05479021487339019], ["iPhone", 1, -0.017445106182882815], ["Battery", 19, 0.0116215680019729]], 1, " iPhone Hacks Save Battery", raw_div, true);
             
         </script>
         </body></html>

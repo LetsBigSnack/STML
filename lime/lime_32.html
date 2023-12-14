@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div2YBG1TF0QRGIQJD"></div>
+        <div class="lime top_div" id="top_divBT14JL3MEQCSV8W"></div>
         
         <script>
-        var top_div = d3.select('#top_div2YBG1TF0QRGIQJD').classed('lime top_div', true);
+        var top_div = d3.select('#top_divBT14JL3MEQCSV8W').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.252602295812847, 0.747397704187153]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.2442717467093778, 0.7557282532906222]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Like", 0.19782702594875126], ["Case", -0.1507152321830106], ["Youre", 0.13815624142582716], ["Looks", 0.04445382910310259], ["Mercury", -0.03593075115741173], ["Freddie", -0.03486165813604316], ["Dressed", 0.027554784727343205], ["Beckham", -0.02226107997582091], ["David", 0.012857613878434534], ["Wondering", 0.0006956250313464294]], 1, exp_div);
+                exp.show([["Like", 0.19633176141928987], ["Case", -0.1504239446257776], ["Youre", 0.14665478834787224], ["Looks", 0.04949795231976578], ["Mercury", -0.03829516992469213], ["Freddie", -0.0376722034957219], ["Dressed", 0.0254646133726338], ["Beckham", -0.023301476453997404], ["David", 0.011234387415021333], ["Wondering", -0.0024773570519672364]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Like", 41, 0.19782702594875126], ["Case", 0, -0.1507152321830106], ["Youre", 5, 0.13815624142582716], ["Looks", 35, 0.04445382910310259], ["Mercury", 62, -0.03593075115741173], ["Freddie", 54, -0.03486165813604316], ["Dressed", 46, 0.027554784727343205], ["Beckham", 27, -0.02226107997582091], ["David", 21, 0.012857613878434534], ["Wondering", 11, 0.0006956250313464294]], 1, "Case Youre Wondering David Beckham Looks Like Dressed Freddie Mercury", raw_div, true);
+            exp.show_raw_text([["Like", 41, 0.19633176141928987], ["Case", 0, -0.1504239446257776], ["Youre", 5, 0.14665478834787224], ["Looks", 35, 0.04949795231976578], ["Mercury", 62, -0.03829516992469213], ["Freddie", 54, -0.0376722034957219], ["Dressed", 46, 0.0254646133726338], ["Beckham", 27, -0.023301476453997404], ["David", 21, 0.011234387415021333], ["Wondering", 11, -0.0024773570519672364]], 1, "Case Youre Wondering David Beckham Looks Like Dressed Freddie Mercury", raw_div, true);
             
         </script>
         </body></html>

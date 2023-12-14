@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divAG372Q3I4H1G5C4"></div>
+        <div class="lime top_div" id="top_divCG97GB2HGVJRT85"></div>
         
         <script>
-        var top_div = d3.select('#top_divAG372Q3I4H1G5C4').classed('lime top_div', true);
+        var top_div = d3.select('#top_divCG97GB2HGVJRT85').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.02646839164526482, 0.9735316083547352]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.016767786003213492, 0.9832322139967865]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Things", 0.10132344649928444], ["People", 0.09757453605045618], ["Women", 0.04240247104002075], ["Used", -0.02631700283568412], ["Crazy", 0.007068895395680985], ["Believe", -0.0009270194514290503], ["1800s", 0.00048794379943769564]], 1, exp_div);
+                exp.show([["Things", 0.09867205222402313], ["People", 0.0893319744677216], ["Women", 0.03843151888697166], ["Used", -0.021324887636436553], ["Crazy", 0.005838254091172758], ["Believe", 0.004193205001691597], ["s", 0.0005622246369347353]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Things", 6, 0.10132344649928444], ["People", 13, 0.09757453605045618], ["Women", 33, 0.04240247104002075], ["Used", 20, -0.02631700283568412], ["Crazy", 0, 0.007068895395680985], ["Believe", 25, -0.0009270194514290503], ["1800s", 39, 0.00048794379943769564]], 1, "Crazy Things People Used Believe Women 1800s", raw_div, true);
+            exp.show_raw_text([["Things", 6, 0.09867205222402313], ["People", 13, 0.0893319744677216], ["Women", 33, 0.03843151888697166], ["Used", 20, -0.021324887636436553], ["Crazy", 0, 0.005838254091172758], ["Believe", 25, 0.004193205001691597], ["s", 39, 0.0005622246369347353]], 1, "Crazy Things People Used Believe Women s", raw_div, true);
             
         </script>
         </body></html>

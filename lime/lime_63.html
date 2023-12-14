@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div9XEI5B7ERCKMO1M"></div>
+        <div class="lime top_div" id="top_div33BJ1R87OJGWXQJ"></div>
         
         <script>
-        var top_div = d3.select('#top_div9XEI5B7ERCKMO1M').classed('lime top_div', true);
+        var top_div = d3.select('#top_div33BJ1R87OJGWXQJ').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7948267646885696, 0.20517323531143036]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7879005163035413, 0.2120994836964587]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Profit", -0.11791442511608603], ["Wall", -0.06595986114176944], ["Exceeds", 0.037265229584659616], ["Street", -0.021393679007307556], ["IBM", -0.009532994071503475], ["Forecasts", 0.0004825251540261175]], 1, exp_div);
+                exp.show([["Profit", -0.11487567087036499], ["Wall", -0.07114027364077498], ["Exceeds", 0.035741212371931494], ["Street", -0.01702874383605326], ["IBM", -0.009480160775142066], ["Forecasts", 0.003011066018850458]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Profit", 4, -0.11791442511608603], ["Wall", 19, -0.06595986114176944], ["Exceeds", 11, 0.037265229584659616], ["Street", 24, -0.021393679007307556], ["IBM", 0, -0.009532994071503475], ["Forecasts", 31, 0.0004825251540261175]], 1, "IBM Profit Exceeds Wall Street Forecasts", raw_div, true);
+            exp.show_raw_text([["Profit", 4, -0.11487567087036499], ["Wall", 19, -0.07114027364077498], ["Exceeds", 11, 0.035741212371931494], ["Street", 24, -0.01702874383605326], ["IBM", 0, -0.009480160775142066], ["Forecasts", 31, 0.003011066018850458]], 1, "IBM Profit Exceeds Wall Street Forecasts", raw_div, true);
             
         </script>
         </body></html>

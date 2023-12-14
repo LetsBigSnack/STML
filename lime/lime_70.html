@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divRGH7ULENTFDPVPU"></div>
+        <div class="lime top_div" id="top_divGUU7ONU6NWL0GRX"></div>
         
         <script>
-        var top_div = d3.select('#top_divRGH7ULENTFDPVPU').classed('lime top_div', true);
+        var top_div = d3.select('#top_divGUU7ONU6NWL0GRX').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.003205984920996219, 0.9967940150790038]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.0048534777399497075, 0.9951465222600503]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Things", 0.048284195076385976], ["21", 0.043906004414219886], ["Everyone", 0.035599931558050725], ["Understand", 0.013030328151242651], ["BodyPump", 0.003411197584357476]], 1, exp_div);
+                exp.show([["Things", 0.10366487014158153], ["Everyone", 0.07664199399380967], ["Understand", 0.04150401875664848], ["BodyPump", 0.016260062703781105]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Things", 3, 0.048284195076385976], ["21", 0, 0.043906004414219886], ["Everyone", 10, 0.035599931558050725], ["Understand", 28, 0.013030328151242651], ["BodyPump", 19, 0.003411197584357476]], 1, "21 Things Everyone BodyPump Understand", raw_div, true);
+            exp.show_raw_text([["Things", 1, 0.10366487014158153], ["Everyone", 8, 0.07664199399380967], ["Understand", 26, 0.04150401875664848], ["BodyPump", 17, 0.016260062703781105]], 1, " Things Everyone BodyPump Understand", raw_div, true);
             
         </script>
         </body></html>

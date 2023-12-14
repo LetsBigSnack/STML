@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divY0C7QYK7LG3VIXR"></div>
+        <div class="lime top_div" id="top_divY85606EBNHQKTDB"></div>
         
         <script>
-        var top_div = d3.select('#top_divY0C7QYK7LG3VIXR').classed('lime top_div', true);
+        var top_div = d3.select('#top_divY85606EBNHQKTDB').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7605122383747301, 0.23948776162526983]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7530271687182182, 0.2469728312817818]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["International", -0.0787639167084932], ["soccer", -0.051231649109689595], ["fixes", 0.03723143385381545], ["technology", -0.028409510726006847], ["field", -0.026019394226172284], ["Board", -0.016173719500669197], ["experiments", 0.009226553373786523], ["size", -0.006903267735570534], ["halts", 0.0033015200145181402]], 1, exp_div);
+                exp.show([["International", -0.08135349066786052], ["soccer", -0.05240339967129562], ["fixes", 0.042207155605664355], ["technology", -0.031998064886573384], ["field", -0.02876061185404996], ["Board", -0.013981637500424868], ["experiments", 0.007757203779894805], ["halts", 0.0021237164118763584], ["size", -0.0009667608671462673]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["International", 0, -0.0787639167084932], ["soccer", 26, -0.051231649109689595], ["fixes", 20, 0.03723143385381545], ["technology", 50, -0.028409510726006847], ["field", 33, -0.026019394226172284], ["Board", 14, -0.016173719500669197], ["experiments", 61, 0.009226553373786523], ["size", 39, -0.006903267735570534], ["halts", 44, 0.0033015200145181402]], 1, "International Board fixes soccer field size halts technology experiments", raw_div, true);
+            exp.show_raw_text([["International", 0, -0.08135349066786052], ["soccer", 26, -0.05240339967129562], ["fixes", 20, 0.042207155605664355], ["technology", 50, -0.031998064886573384], ["field", 33, -0.02876061185404996], ["Board", 14, -0.013981637500424868], ["experiments", 61, 0.007757203779894805], ["halts", 44, 0.0021237164118763584], ["size", 39, -0.0009667608671462673]], 1, "International Board fixes soccer field size halts technology experiments", raw_div, true);
             
         </script>
         </body></html>

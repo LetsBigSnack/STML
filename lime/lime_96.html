@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divXD80J66DD9B9R0G"></div>
+        <div class="lime top_div" id="top_divB2H9708I6Z5QHO4"></div>
         
         <script>
-        var top_div = d3.select('#top_divXD80J66DD9B9R0G').classed('lime top_div', true);
+        var top_div = d3.select('#top_divB2H9708I6Z5QHO4').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6703543518762065, 0.32964564812379354]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6684952197757204, 0.33150478022427965]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Law", -0.08442717984683391], ["Group", -0.06254735347414819], ["Seen", 0.05898325911171385], ["Teaching", -0.018417735064439552], ["Door", -0.01817926563969469], ["Creationism", 0.009165483590704682], ["Science", 0.008076653233025788], ["Boycott", -0.00517366510437992], ["Louisiana", 0.003940985989187779]], 1, exp_div);
+                exp.show([["Law", -0.08774310106734137], ["Group", -0.05972442261983798], ["Seen", 0.059114105370513766], ["Teaching", -0.01908580989928079], ["Door", -0.018348517261014354], ["Science", 0.010918811781830755], ["Creationism", 0.008784631769244952], ["Boycott", -0.005788176590508749], ["Louisiana", 0.002253900053160416]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Law", 32, -0.08442717984683391], ["Group", 16, -0.06254735347414819], ["Seen", 36, 0.05898325911171385], ["Teaching", 46, -0.018417735064439552], ["Door", 41, -0.01817926563969469], ["Creationism", 55, 0.009165483590704682], ["Science", 8, 0.008076653233025788], ["Boycott", 0, -0.00517366510437992], ["Louisiana", 22, 0.003940985989187779]], 1, "Boycott Science Group Louisiana Law Seen Door Teaching Creationism", raw_div, true);
+            exp.show_raw_text([["Law", 32, -0.08774310106734137], ["Group", 16, -0.05972442261983798], ["Seen", 36, 0.059114105370513766], ["Teaching", 46, -0.01908580989928079], ["Door", 41, -0.018348517261014354], ["Science", 8, 0.010918811781830755], ["Creationism", 55, 0.008784631769244952], ["Boycott", 0, -0.005788176590508749], ["Louisiana", 22, 0.002253900053160416]], 1, "Boycott Science Group Louisiana Law Seen Door Teaching Creationism", raw_div, true);
             
         </script>
         </body></html>

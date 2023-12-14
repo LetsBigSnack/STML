@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divNIWOXPGXY5KZBTB"></div>
+        <div class="lime top_div" id="top_divVMWNPJGW1MQOF5J"></div>
         
         <script>
-        var top_div = d3.select('#top_divNIWOXPGXY5KZBTB').classed('lime top_div', true);
+        var top_div = d3.select('#top_divVMWNPJGW1MQOF5J').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.0501295824818474, 0.9498704175181526]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.08737048625097932, 0.9126295137490207]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["17", 0.10829543325861918], ["Make", 0.09829322479338393], ["Ways", 0.07209859593815632], ["Surefire", -0.04062333475861666], ["Hipster", -0.02120828391744473], ["Cry", -0.000772904348440676]], 1, exp_div);
+                exp.show([["Make", 0.15370903516964013], ["Ways", 0.13388123541075553], ["Surefire", -0.04503075850221106], ["Hipster", -0.0214249585821162], ["Cry", 0.009377399296217654]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["17", 0, 0.10829543325861918], ["Make", 17, 0.09829322479338393], ["Ways", 12, 0.07209859593815632], ["Surefire", 3, -0.04062333475861666], ["Hipster", 22, -0.02120828391744473], ["Cry", 30, -0.000772904348440676]], 1, "17 Surefire Ways Make Hipster Cry", raw_div, true);
+            exp.show_raw_text([["Make", 15, 0.15370903516964013], ["Ways", 10, 0.13388123541075553], ["Surefire", 1, -0.04503075850221106], ["Hipster", 20, -0.0214249585821162], ["Cry", 28, 0.009377399296217654]], 1, " Surefire Ways Make Hipster Cry", raw_div, true);
             
         </script>
         </body></html>

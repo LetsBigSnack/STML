@@ -347,4 +347,4 @@ for i in range(100):
 
     # Visualize the SHAP values - Summary plot
     shap.summary_plot(shap_values, X_test_dtm[i], feature_names=vect.get_feature_names_out(), show=False, max_display=20)
-    plt.savefig("shap/shap_summary_["+X_test.iloc[i].replace(" ", "_")+"].png")
+    plt.savefig("shap/shap_summary_"+str(i)+"_["+X_test.iloc[i]+"].png")

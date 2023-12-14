@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divIKM2NCC1LBVGFSR"></div>
+        <div class="lime top_div" id="top_div6SQL3MFFMTF6JFK"></div>
         
         <script>
-        var top_div = d3.select('#top_divIKM2NCC1LBVGFSR').classed('lime top_div', true);
+        var top_div = d3.select('#top_div6SQL3MFFMTF6JFK').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.5897042046377372, 0.4102957953622628]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.5620596208753972, 0.4379403791246028]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["collapse", -0.04477750067071455], ["reveals", -0.02484486406356187], ["exotic", 0.01880139380139853], ["Larson", 0.018162760745606004], ["10000", -0.011775367535587408], ["isolated", -0.009218350278325725], ["years", -0.006214719241969262], ["organisms", 0.0031166215414996697], ["iceshelf", -0.00040557474442226007], ["B", -0.00011441990167862234]], 1, exp_div);
+                exp.show([["collapse", -0.047477162771529184], ["reveals", -0.031761954662835865], ["Larson", 0.01846387619176143], ["exotic", 0.01717520347672187], ["years", 0.016444595832773915], ["isolated", -0.012801678197125584], ["organisms", 0.0007995892816404975], ["iceshelf", -0.00024092485686805844], ["B", -2.4955865433371367e-05]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["collapse", 18, -0.04477750067071455], ["reveals", 27, -0.02484486406356187], ["exotic", 35, 0.01880139380139853], ["Larson", 0, 0.018162760745606004], ["10000", 61, -0.011775367535587408], ["isolated", 52, -0.009218350278325725], ["years", 67, -0.006214719241969262], ["organisms", 42, 0.0031166215414996697], ["iceshelf", 9, -0.00040557474442226007], ["B", 7, -0.00011441990167862234]], 1, "Larson B iceshelf collapse reveals exotic organisms isolated 10000 years", raw_div, true);
+            exp.show_raw_text([["collapse", 18, -0.047477162771529184], ["reveals", 27, -0.031761954662835865], ["Larson", 0, 0.01846387619176143], ["exotic", 35, 0.01717520347672187], ["years", 61, 0.016444595832773915], ["isolated", 52, -0.012801678197125584], ["organisms", 42, 0.0007995892816404975], ["iceshelf", 9, -0.00024092485686805844], ["B", 7, -2.4955865433371367e-05]], 1, "Larson B iceshelf collapse reveals exotic organisms isolated years", raw_div, true);
             
         </script>
         </body></html>
