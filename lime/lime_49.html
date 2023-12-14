@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divGIAK63O5MRPKF46"></div>
+        <div class="lime top_div" id="top_divTX36JK7UFV2BQ9U"></div>
         
         <script>
-        var top_div = d3.select('#top_divGIAK63O5MRPKF46').classed('lime top_div', true);
+        var top_div = d3.select('#top_divTX36JK7UFV2BQ9U').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.04899652145416222, 0.9510034785458378]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.048790746215509495, 0.9512092537844905]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Make", 0.12400203497464689], ["Thatll", 0.04973921241439531], ["Want", 0.03532422175339795], ["Baby", 0.03251868423799701], ["Names", -0.014658112690793366], ["Musical", -0.01002623384214866], ["Procreate", 0.0020502824505964617]], 1, exp_div);
+                exp.show([["Make", 0.12362867730537598], ["Thatll", 0.04961142354518494], ["Want", 0.03487231373421261], ["Baby", 0.03323951933856188], ["Names", -0.012505410821713603], ["Musical", -0.008909545133344538], ["Procreate", 0.0024496116684075793]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Make", 27, 0.12400203497464689], ["Thatll", 20, 0.04973921241439531], ["Want", 32, 0.03532422175339795], ["Baby", 9, 0.03251868423799701], ["Names", 14, -0.014658112690793366], ["Musical", 1, -0.01002623384214866], ["Procreate", 37, 0.0020502824505964617]], 1, " Musical Baby Names Thatll Make Want Procreate", raw_div, true);
+            exp.show_raw_text([["Make", 27, 0.12362867730537598], ["Thatll", 20, 0.04961142354518494], ["Want", 32, 0.03487231373421261], ["Baby", 9, 0.03323951933856188], ["Names", 14, -0.012505410821713603], ["Musical", 1, -0.008909545133344538], ["Procreate", 37, 0.0024496116684075793]], 1, " Musical Baby Names Thatll Make Want Procreate", raw_div, true);
             
         </script>
         </body></html>

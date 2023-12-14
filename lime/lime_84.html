@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divLKOUKI6DVHRMJ7H"></div>
+        <div class="lime top_div" id="top_div9ASYCCXXY1WAB09"></div>
         
         <script>
-        var top_div = d3.select('#top_divLKOUKI6DVHRMJ7H').classed('lime top_div', true);
+        var top_div = d3.select('#top_div9ASYCCXXY1WAB09').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.2732440291078241, 0.7267559708921759]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.27390484817666316, 0.7260951518233368]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Taylor", 0.1399216077049423], ["Swift", 0.09226870468044862], ["Winfrey", -0.08415555432802119], ["Oprah", -0.02260556408749355]], 1, exp_div);
+                exp.show([["Taylor", 0.14020065147281172], ["Swift", 0.09191895233844573], ["Winfrey", -0.08443155852757922], ["Oprah", -0.02116022952213451]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Taylor", 0, 0.1399216077049423], ["Swift", 7, 0.09226870468044862], ["Winfrey", 19, -0.08415555432802119], ["Oprah", 13, -0.02260556408749355]], 1, "Taylor Swift Oprah Winfrey", raw_div, true);
+            exp.show_raw_text([["Taylor", 0, 0.14020065147281172], ["Swift", 7, 0.09191895233844573], ["Winfrey", 19, -0.08443155852757922], ["Oprah", 13, -0.02116022952213451]], 1, "Taylor Swift Oprah Winfrey", raw_div, true);
             
         </script>
         </body></html>

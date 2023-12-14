@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divFP6X9H1G8NT16YL"></div>
+        <div class="lime top_div" id="top_div6ANFZZ3TUFI98D5"></div>
         
         <script>
-        var top_div = d3.select('#top_divFP6X9H1G8NT16YL').classed('lime top_div', true);
+        var top_div = d3.select('#top_div6ANFZZ3TUFI98D5').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.15939952690811365, 0.8406004730918863]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.1590089362635354, 0.8409910637364646]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Ways", 0.2119798722634923], ["Everything", 0.11850962339759992], ["Home", -0.053188653735767456], ["Store", -0.0306805672555775], ["Minimalist", -0.011314683877296684]], 1, exp_div);
+                exp.show([["Ways", 0.21238960692425168], ["Everything", 0.11818185463578927], ["Home", -0.055506295457527596], ["Store", -0.030673857552706147], ["Minimalist", -0.01091384543499988]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Ways", 12, 0.2119798722634923], ["Everything", 23, 0.11850962339759992], ["Home", 34, -0.053188653735767456], ["Store", 17, -0.0306805672555775], ["Minimalist", 1, -0.011314683877296684]], 1, " Minimalist Ways Store Everything Home", raw_div, true);
+            exp.show_raw_text([["Ways", 12, 0.21238960692425168], ["Everything", 23, 0.11818185463578927], ["Home", 34, -0.055506295457527596], ["Store", 17, -0.030673857552706147], ["Minimalist", 1, -0.01091384543499988]], 1, " Minimalist Ways Store Everything Home", raw_div, true);
             
         </script>
         </body></html>

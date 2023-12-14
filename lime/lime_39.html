@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div4XG1FFYVNC01K2Z"></div>
+        <div class="lime top_div" id="top_divBAWFG3SV4HA6RD9"></div>
         
         <script>
-        var top_div = d3.select('#top_div4XG1FFYVNC01K2Z').classed('lime top_div', true);
+        var top_div = d3.select('#top_divBAWFG3SV4HA6RD9').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7558153263331164, 0.2441846736668835]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7576772517933484, 0.24232274820665153]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["US", -0.20821882162416191], ["Men", 0.10877640228464505], ["Cup", -0.10276927436808966], ["Manage", 0.05366447133864665], ["Haiti", -0.04767324395380103], ["Tie", 0.019314277966625094], ["Gold", 0.0014803187045574946]], 1, exp_div);
+                exp.show([["US", -0.2085621273001353], ["Men", 0.10817384394561216], ["Cup", -0.10212059356878377], ["Manage", 0.053876303179289924], ["Haiti", -0.04608639941123513], ["Tie", 0.019064221384798973], ["Gold", 0.002625495304573403]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["US", 0, -0.20821882162416191], ["Men", 3, 0.10877640228464505], ["Cup", 29, -0.10276927436808966], ["Manage", 7, 0.05366447133864665], ["Haiti", 18, -0.04767324395380103], ["Tie", 14, 0.019314277966625094], ["Gold", 24, 0.0014803187045574946]], 1, "US Men Manage Tie Haiti Gold Cup", raw_div, true);
+            exp.show_raw_text([["US", 0, -0.2085621273001353], ["Men", 3, 0.10817384394561216], ["Cup", 29, -0.10212059356878377], ["Manage", 7, 0.053876303179289924], ["Haiti", 18, -0.04608639941123513], ["Tie", 14, 0.019064221384798973], ["Gold", 24, 0.002625495304573403]], 1, "US Men Manage Tie Haiti Gold Cup", raw_div, true);
             
         </script>
         </body></html>

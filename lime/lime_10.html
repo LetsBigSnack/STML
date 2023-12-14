@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div4YBK7VS5HUD49KN"></div>
+        <div class="lime top_div" id="top_divPSO0NSKP904VBTR"></div>
         
         <script>
-        var top_div = d3.select('#top_div4YBK7VS5HUD49KN').classed('lime top_div', true);
+        var top_div = d3.select('#top_divPSO0NSKP904VBTR').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.0779953397222598, 0.9220046602777402]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.07822208368014094, 0.9217779163198591]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Guess", 0.17058482341176748], ["Much", 0.058648228251550145], ["Pizza", 0.032617582890812694], ["Ate", -0.030681824894598853]], 1, exp_div);
+                exp.show([["Guess", 0.17100836811304765], ["Much", 0.058984510228871856], ["Pizza", 0.034693610187929234], ["Ate", -0.032138438978935986]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Guess", 0, 0.17058482341176748], ["Much", 6, 0.058648228251550145], ["Pizza", 11, 0.032617582890812694], ["Ate", 17, -0.030681824894598853]], 1, "Guess Much Pizza Ate ", raw_div, true);
+            exp.show_raw_text([["Guess", 0, 0.17100836811304765], ["Much", 6, 0.058984510228871856], ["Pizza", 11, 0.034693610187929234], ["Ate", 17, -0.032138438978935986]], 1, "Guess Much Pizza Ate ", raw_div, true);
             
         </script>
         </body></html>

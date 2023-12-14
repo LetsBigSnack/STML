@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div04S4FSJBQMN8RLY"></div>
+        <div class="lime top_div" id="top_divWLAURCHJEI9TV0Y"></div>
         
         <script>
-        var top_div = d3.select('#top_div04S4FSJBQMN8RLY').classed('lime top_div', true);
+        var top_div = d3.select('#top_divWLAURCHJEI9TV0Y').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.24550979088993619, 0.7544902091100638]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.24487226104826576, 0.7551277389517342]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Fuck", 0.10286331868646414], ["Kill", -0.08773794194126452], ["Dude", 0.06394215598446554], ["Marry", 0.054539915654040955], ["Edition", 0.032854639880727954], ["Names", 0.00774953955856675]], 1, exp_div);
+                exp.show([["Fuck", 0.103314892408721], ["Kill", -0.08872744349356854], ["Dude", 0.06518628466455527], ["Marry", 0.05656417157114988], ["Edition", 0.03258220312590007], ["Names", 0.009603634302263894]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Fuck", 0, 0.10286331868646414], ["Kill", 11, -0.08773794194126452], ["Dude", 16, 0.06394215598446554], ["Marry", 5, 0.054539915654040955], ["Edition", 27, 0.032854639880727954], ["Names", 21, 0.00774953955856675]], 1, "Fuck Marry Kill Dude Names Edition", raw_div, true);
+            exp.show_raw_text([["Fuck", 0, 0.103314892408721], ["Kill", 11, -0.08872744349356854], ["Dude", 16, 0.06518628466455527], ["Marry", 5, 0.05656417157114988], ["Edition", 27, 0.03258220312590007], ["Names", 21, 0.009603634302263894]], 1, "Fuck Marry Kill Dude Names Edition", raw_div, true);
             
         </script>
         </body></html>

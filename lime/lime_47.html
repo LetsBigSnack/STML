@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div4U86NUH5391EXL3"></div>
+        <div class="lime top_div" id="top_divBMSB6VIS6M8Q3OP"></div>
         
         <script>
-        var top_div = d3.select('#top_div4U86NUH5391EXL3').classed('lime top_div', true);
+        var top_div = d3.select('#top_divBMSB6VIS6M8Q3OP').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.06867012971138631, 0.9313298702886137]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.0685426774635276, 0.9314573225364724]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Based", 0.12420614476751503], ["Really", 0.10405107316397016], ["Questions", 0.07711545826918084], ["Lola", -0.0550114309953831], ["Hard", -0.02271564311999549], ["Kalyeserye", 0.0023098544282103505]], 1, exp_div);
+                exp.show([["Based", 0.12653402507029327], ["Really", 0.10293291589938443], ["Questions", 0.07577725030146167], ["Lola", -0.05781463554561695], ["Hard", -0.024716149984658087], ["Kalyeserye", 0.0034014969379711135]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Based", 16, 0.12420614476751503], ["Really", 22, 0.10405107316397016], ["Questions", 34, 0.07711545826918084], ["Lola", 0, -0.0550114309953831], ["Hard", 29, -0.02271564311999549], ["Kalyeserye", 5, 0.0023098544282103505]], 1, "Lola Kalyeserye Based Really Hard Questions", raw_div, true);
+            exp.show_raw_text([["Based", 16, 0.12653402507029327], ["Really", 22, 0.10293291589938443], ["Questions", 34, 0.07577725030146167], ["Lola", 0, -0.05781463554561695], ["Hard", 29, -0.024716149984658087], ["Kalyeserye", 5, 0.0034014969379711135]], 1, "Lola Kalyeserye Based Really Hard Questions", raw_div, true);
             
         </script>
         </body></html>

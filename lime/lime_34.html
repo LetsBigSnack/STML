@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divDZMLJ4GNH7NU8CM"></div>
+        <div class="lime top_div" id="top_divS5G0KHLBYGV4NJW"></div>
         
         <script>
-        var top_div = d3.select('#top_divDZMLJ4GNH7NU8CM').classed('lime top_div', true);
+        var top_div = d3.select('#top_divS5G0KHLBYGV4NJW').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.3006140188057357, 0.6993859811942643]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.30154896084238636, 0.6984510391576136]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Delicious", 0.16833488052229206], ["Eat", 0.12899643364579444], ["Die", -0.10464491776279358], ["Bloody", -0.03166320191328367], ["Must", -0.01829655071590657], ["Afternoon", -0.0005035439912866481], ["Teas", 0.0003581130232336297]], 1, exp_div);
+                exp.show([["Delicious", 0.169004343735633], ["Eat", 0.12904986442682473], ["Die", -0.10665465984981548], ["Bloody", -0.03213603055543411], ["Must", -0.018977824439626704], ["Teas", 0.0020846993973188933], ["Afternoon", 0.0001146224459280873]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Delicious", 8, 0.16833488052229206], ["Eat", 38, 0.12899643364579444], ["Die", 42, -0.10464491776279358], ["Bloody", 1, -0.03166320191328367], ["Must", 33, -0.01829655071590657], ["Afternoon", 18, -0.0005035439912866481], ["Teas", 28, 0.0003581130232336297]], 1, " Bloody Delicious Afternoon Teas Must Eat Die", raw_div, true);
+            exp.show_raw_text([["Delicious", 8, 0.169004343735633], ["Eat", 38, 0.12904986442682473], ["Die", 42, -0.10665465984981548], ["Bloody", 1, -0.03213603055543411], ["Must", 33, -0.018977824439626704], ["Teas", 28, 0.0020846993973188933], ["Afternoon", 18, 0.0001146224459280873]], 1, " Bloody Delicious Afternoon Teas Must Eat Die", raw_div, true);
             
         </script>
         </body></html>

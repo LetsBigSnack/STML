@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divFW2NY2Y2IGQ416N"></div>
+        <div class="lime top_div" id="top_divJZN0FMA7EIJZ9A3"></div>
         
         <script>
-        var top_div = d3.select('#top_divFW2NY2Y2IGQ416N').classed('lime top_div', true);
+        var top_div = d3.select('#top_divJZN0FMA7EIJZ9A3').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.4225217068955347, 0.5774782931044653]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.4237950594144376, 0.5762049405855624]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Hacks", 0.11918910900405223], ["Save", -0.05479021487339019], ["iPhone", -0.017445106182882815], ["Battery", 0.0116215680019729]], 1, exp_div);
+                exp.show([["Hacks", 0.11925814350332653], ["Save", -0.056160700509101234], ["iPhone", -0.01855579155844744], ["Battery", 0.011675395567921102]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Hacks", 8, 0.11918910900405223], ["Save", 14, -0.05479021487339019], ["iPhone", 1, -0.017445106182882815], ["Battery", 19, 0.0116215680019729]], 1, " iPhone Hacks Save Battery", raw_div, true);
+            exp.show_raw_text([["Hacks", 8, 0.11925814350332653], ["Save", 14, -0.056160700509101234], ["iPhone", 1, -0.01855579155844744], ["Battery", 19, 0.011675395567921102]], 1, " iPhone Hacks Save Battery", raw_div, true);
             
         </script>
         </body></html>

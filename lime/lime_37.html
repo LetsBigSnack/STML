@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divGQRKCJNZPP8HDTY"></div>
+        <div class="lime top_div" id="top_div92JXDLG42N8PKNC"></div>
         
         <script>
-        var top_div = d3.select('#top_divGQRKCJNZPP8HDTY').classed('lime top_div', true);
+        var top_div = d3.select('#top_div92JXDLG42N8PKNC').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.07327241464853074, 0.9267275853514693]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.07311240879650516, 0.9268875912034948]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Make", 0.1298122763102991], ["Video", 0.04546732412395341], ["Time", 0.03998103955748814], ["Cry", 0.006786948404123894], ["Dads", -0.006734411945764517], ["Talking", 0.0035772861814466006], ["Indians", -0.002930321850599251]], 1, exp_div);
+                exp.show([["Make", 0.13113531881635757], ["Video", 0.044937518759876345], ["Time", 0.03973651444507313], ["Dads", -0.007419729041103564], ["Cry", 0.005619755428231223], ["Indians", -0.0036370342476505875], ["Talking", 0.0028667062216649417]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Make", 27, 0.1298122763102991], ["Video", 0, 0.04546732412395341], ["Time", 36, 0.03998103955748814], ["Cry", 32, 0.006786948404123894], ["Dads", 22, -0.006734411945764517], ["Talking", 14, 0.0035772861814466006], ["Indians", 6, -0.002930321850599251]], 1, "Video Indians Talking Dads Make Cry Time", raw_div, true);
+            exp.show_raw_text([["Make", 27, 0.13113531881635757], ["Video", 0, 0.044937518759876345], ["Time", 36, 0.03973651444507313], ["Dads", 22, -0.007419729041103564], ["Cry", 32, 0.005619755428231223], ["Indians", 6, -0.0036370342476505875], ["Talking", 14, 0.0028667062216649417]], 1, "Video Indians Talking Dads Make Cry Time", raw_div, true);
             
         </script>
         </body></html>

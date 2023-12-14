@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div59PTQE0HHLYS785"></div>
+        <div class="lime top_div" id="top_divGK65J8QMB1ZK05O"></div>
         
         <script>
-        var top_div = d3.select('#top_div59PTQE0HHLYS785').classed('lime top_div', true);
+        var top_div = d3.select('#top_divGK65J8QMB1ZK05O').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7309055786457965, 0.2690944213542034]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7311916774757454, 0.2688083225242546]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["case", -0.15174727809561442], ["revealed", 0.05286634236182223], ["suspects", -0.05267635866440624], ["Sixteen", -0.02119939620053281], ["Zotob", 0.01983941944773313], ["additional", 0.014966635295122963], ["worm", -0.011676217534758025]], 1, exp_div);
+                exp.show([["case", -0.15143122177916643], ["suspects", -0.05338932912542521], ["revealed", 0.052912889490797775], ["Sixteen", -0.02098030054443909], ["Zotob", 0.020716472047638154], ["additional", 0.015332779504093246], ["worm", -0.011764278770469717]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["case", 48, -0.15174727809561442], ["revealed", 28, 0.05286634236182223], ["suspects", 19, -0.05267635866440624], ["Sixteen", 0, -0.02119939620053281], ["Zotob", 37, 0.01983941944773313], ["additional", 8, 0.014966635295122963], ["worm", 43, -0.011676217534758025]], 1, "Sixteen additional suspects revealed Zotob worm case", raw_div, true);
+            exp.show_raw_text([["case", 48, -0.15143122177916643], ["suspects", 19, -0.05338932912542521], ["revealed", 28, 0.052912889490797775], ["Sixteen", 0, -0.02098030054443909], ["Zotob", 37, 0.020716472047638154], ["additional", 8, 0.015332779504093246], ["worm", 43, -0.011764278770469717]], 1, "Sixteen additional suspects revealed Zotob worm case", raw_div, true);
             
         </script>
         </body></html>

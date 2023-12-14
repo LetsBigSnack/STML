@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divYNLWFIERPPFI3SW"></div>
+        <div class="lime top_div" id="top_divUYZ86NGOXYIR8W8"></div>
         
         <script>
-        var top_div = d3.select('#top_divYNLWFIERPPFI3SW').classed('lime top_div', true);
+        var top_div = d3.select('#top_divUYZ86NGOXYIR8W8').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6323262689491937, 0.36767373105080625]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6321617763771428, 0.3678382236228573]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Want", 0.11187207579601181], ["Investors", -0.10351739317786987], ["Cash", -0.08022873186319271], ["Firms", -0.05434746695740095], ["Anxious", 0.03025106546758284], ["Biotech", -0.006066211280248498]], 1, exp_div);
+                exp.show([["Want", 0.11189491720987448], ["Investors", -0.10179030025831783], ["Cash", -0.0783496204216823], ["Firms", -0.05469746447020789], ["Anxious", 0.031131395580145424], ["Biotech", -0.005549746535128667]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Want", 18, 0.11187207579601181], ["Investors", 8, -0.10351739317786987], ["Cash", 37, -0.08022873186319271], ["Firms", 31, -0.05434746695740095], ["Anxious", 0, 0.03025106546758284], ["Biotech", 23, -0.006066211280248498]], 1, "Anxious Investors Want Biotech Firms Cash", raw_div, true);
+            exp.show_raw_text([["Want", 18, 0.11189491720987448], ["Investors", 8, -0.10179030025831783], ["Cash", 37, -0.0783496204216823], ["Firms", 31, -0.05469746447020789], ["Anxious", 0, 0.031131395580145424], ["Biotech", 23, -0.005549746535128667]], 1, "Anxious Investors Want Biotech Firms Cash", raw_div, true);
             
         </script>
         </body></html>

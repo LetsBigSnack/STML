@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divCH95CES1NAMFSTI"></div>
+        <div class="lime top_div" id="top_divX2TE976KC6HCN7N"></div>
         
         <script>
-        var top_div = d3.select('#top_divCH95CES1NAMFSTI').classed('lime top_div', true);
+        var top_div = d3.select('#top_divX2TE976KC6HCN7N').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7306861858763669, 0.2693138141236331]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7309939212810628, 0.26900607871893717]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Financial", -0.16598932015251466], ["Advice", 0.1393350844442163], ["Stimulus", -0.13628651420483812]], 1, exp_div);
+                exp.show([["Financial", -0.1604011588156136], ["Advice", 0.145382215611791], ["Stimulus", -0.1301973512402652]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Financial", 9, -0.16598932015251466], ["Advice", 19, 0.1393350844442163], ["Stimulus", 0, -0.13628651420483812]], 1, "Stimulus Financial Advice", raw_div, true);
+            exp.show_raw_text([["Financial", 9, -0.1604011588156136], ["Advice", 19, 0.145382215611791], ["Stimulus", 0, -0.1301973512402652]], 1, "Stimulus Financial Advice", raw_div, true);
             
         </script>
         </body></html>

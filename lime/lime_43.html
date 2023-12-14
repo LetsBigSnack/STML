@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divX3LD8QURHTZ5VP1"></div>
+        <div class="lime top_div" id="top_div46HUX5N9Q3LP2VD"></div>
         
         <script>
-        var top_div = d3.select('#top_divX3LD8QURHTZ5VP1').classed('lime top_div', true);
+        var top_div = d3.select('#top_div46HUX5N9Q3LP2VD').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7568378565188318, 0.2431621434811682]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7568578578906002, 0.24314214210939972]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["workers", -0.10392747539702876], ["French", -0.042949682701407726], ["compensation", 0.03221091306691873], ["threats", -0.028316744159456307], ["use", -0.01473298377750775], ["demand", 0.0014929503658808586]], 1, exp_div);
+                exp.show([["workers", -0.1037035063743616], ["French", -0.042483103606729834], ["compensation", 0.031757050417859464], ["threats", -0.028708699213684595], ["use", -0.01514125297917124], ["demand", 0.0012514405050830988]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["workers", 7, -0.10392747539702876], ["French", 0, -0.042949682701407726], ["compensation", 27, 0.03221091306691873], ["threats", 19, -0.028316744159456307], ["use", 15, -0.01473298377750775], ["demand", 40, 0.0014929503658808586]], 1, "French workers use threats compensation demand", raw_div, true);
+            exp.show_raw_text([["workers", 7, -0.1037035063743616], ["French", 0, -0.042483103606729834], ["compensation", 27, 0.031757050417859464], ["threats", 19, -0.028708699213684595], ["use", 15, -0.01514125297917124], ["demand", 40, 0.0012514405050830988]], 1, "French workers use threats compensation demand", raw_div, true);
             
         </script>
         </body></html>

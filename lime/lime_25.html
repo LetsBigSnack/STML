@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divM8EC5MSTFZ1DLVD"></div>
+        <div class="lime top_div" id="top_divEX9C9OTZ1TDNVVP"></div>
         
         <script>
-        var top_div = d3.select('#top_divM8EC5MSTFZ1DLVD').classed('lime top_div', true);
+        var top_div = d3.select('#top_divEX9C9OTZ1TDNVVP').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8810640446018869, 0.11893595539811314]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8808017209358695, 0.11919827906413051]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["kills", -0.14893104850839817], ["least", -0.06937160303591414], ["Coordinated", 0.0466717004529402], ["India", -0.03885922790424243], ["series", -0.012469688815993864], ["bombs", 0.007724772436723035]], 1, exp_div);
+                exp.show([["kills", -0.1478394154722356], ["least", -0.06895469850851946], ["Coordinated", 0.04532541935247567], ["India", -0.038932304075733115], ["series", -0.011362294307465281], ["bombs", 0.00866528917702106]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["kills", 25, -0.14893104850839817], ["least", 31, -0.06937160303591414], ["Coordinated", 0, 0.0466717004529402], ["India", 37, -0.03885922790424243], ["series", 12, -0.012469688815993864], ["bombs", 19, 0.007724772436723035]], 1, "Coordinated series bombs kills least India", raw_div, true);
+            exp.show_raw_text([["kills", 25, -0.1478394154722356], ["least", 31, -0.06895469850851946], ["Coordinated", 0, 0.04532541935247567], ["India", 37, -0.038932304075733115], ["series", 12, -0.011362294307465281], ["bombs", 19, 0.00866528917702106]], 1, "Coordinated series bombs kills least India", raw_div, true);
             
         </script>
         </body></html>

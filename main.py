@@ -308,7 +308,7 @@ for i in range(len(prediction)):
 explainer = LimeTextExplainer(class_names=['Not Clickbait', 'Clickbait'])
 idx = 1  # Index of the sample you want to explain
 
-for i in range(100):
+for i in range(100000):
     exp = explainer.explain_instance(X_test.iloc[i], pipe.predict_proba)
     exp.show_in_notebook(text=True)
     exp.save_to_file('lime/lime_'+str(i)+'.html')

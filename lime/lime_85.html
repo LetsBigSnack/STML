@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div46A9EQT0M2TAED0"></div>
+        <div class="lime top_div" id="top_divPKU8T1U4ZL33H1O"></div>
         
         <script>
-        var top_div = d3.select('#top_div46A9EQT0M2TAED0').classed('lime top_div', true);
+        var top_div = d3.select('#top_divPKU8T1U4ZL33H1O').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.656678299599661, 0.3433217004003391]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6579152683961763, 0.3420847316038237]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["court", -0.14654515409792684], ["returns", -0.08520969624875004], ["Cook", 0.04712952935489783], ["one", 0.03962651506206123], ["One", 0.039595246159176395], ["shop", 0.0313865507142982], ["Thomas", -0.017603184209921314], ["work", -0.011408193961284382], ["order", 0.008881636299079601], ["defies", -0.006990092010355545]], 1, exp_div);
+                exp.show([["court", -0.14833303729222264], ["returns", -0.08649740836314618], ["Cook", 0.046825273102670095], ["one", 0.03820226265042983], ["One", 0.03794105183162479], ["shop", 0.030798001831789885], ["Thomas", -0.017721248763779517], ["work", -0.012070207888585783], ["order", 0.008452635206043571], ["occupation", 0.007505077735792332]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["court", 16, -0.14654515409792684], ["returns", 37, -0.08520969624875004], ["Cook", 64, 0.04712952935489783], ["one", 28, 0.03962651506206123], ["One", 0, 0.039595246159176395], ["shop", 4, 0.0313865507142982], ["shop", 32, 0.0313865507142982], ["Thomas", 57, -0.017603184209921314], ["work", 45, -0.011408193961284382], ["order", 22, 0.008881636299079601], ["defies", 9, -0.006990092010355545]], 1, "One shop defies court order one shop returns work Dublin Thomas Cook occupation", raw_div, true);
+            exp.show_raw_text([["court", 16, -0.14833303729222264], ["returns", 37, -0.08649740836314618], ["Cook", 64, 0.046825273102670095], ["one", 28, 0.03820226265042983], ["One", 0, 0.03794105183162479], ["shop", 4, 0.030798001831789885], ["shop", 32, 0.030798001831789885], ["Thomas", 57, -0.017721248763779517], ["work", 45, -0.012070207888585783], ["order", 22, 0.008452635206043571], ["occupation", 69, 0.007505077735792332]], 1, "One shop defies court order one shop returns work Dublin Thomas Cook occupation", raw_div, true);
             
         </script>
         </body></html>

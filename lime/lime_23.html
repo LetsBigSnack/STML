@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divSRW4LK2L3WYR288"></div>
+        <div class="lime top_div" id="top_div76VQ987J072O182"></div>
         
         <script>
-        var top_div = d3.select('#top_divSRW4LK2L3WYR288').classed('lime top_div', true);
+        var top_div = d3.select('#top_div76VQ987J072O182').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.775078699433288, 0.22492130056671197]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7745599746906402, 0.2254400253093598]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["wins", -0.24324634096203726], ["Jelena", 0.04300469532113731], ["Cincinnati", 0.023985754804904242], ["Masters", -0.012320699034299503], ["Jankovi", -0.0014995873442677893], ["Tennis", 0.0008103672111690481]], 1, exp_div);
+                exp.show([["wins", -0.24197796810441874], ["Jelena", 0.04204347128678689], ["Cincinnati", 0.023413605987754056], ["Masters", -0.01215216731770561], ["Jankovi", -0.001394039536401337], ["Tennis", 0.0013880515608064143]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["wins", 22, -0.24324634096203726], ["Jelena", 7, 0.04300469532113731], ["Cincinnati", 27, 0.023985754804904242], ["Masters", 38, -0.012320699034299503], ["Jankovi", 14, -0.0014995873442677893], ["Tennis", 0, 0.0008103672111690481]], 1, "Tennis Jelena Jankovi wins Cincinnati Masters", raw_div, true);
+            exp.show_raw_text([["wins", 22, -0.24197796810441874], ["Jelena", 7, 0.04204347128678689], ["Cincinnati", 27, 0.023413605987754056], ["Masters", 38, -0.01215216731770561], ["Jankovi", 14, -0.001394039536401337], ["Tennis", 0, 0.0013880515608064143]], 1, "Tennis Jelena Jankovi wins Cincinnati Masters", raw_div, true);
             
         </script>
         </body></html>

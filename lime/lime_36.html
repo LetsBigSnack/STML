@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divSV8ICSOY0FQII2Y"></div>
+        <div class="lime top_div" id="top_divR0H8BBA881OCQE7"></div>
         
         <script>
-        var top_div = d3.select('#top_divSV8ICSOY0FQII2Y').classed('lime top_div', true);
+        var top_div = d3.select('#top_divR0H8BBA881OCQE7').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7803640935974572, 0.21963590640254277]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7795954252571999, 0.22040457474280012]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Church", -0.08128790818117962], ["Scientology", -0.06484971363130146], ["raid", -0.03691758113051003], ["Belgium", 0.009715895808876853], ["Authorities", 0.0016715048262300114]], 1, exp_div);
+                exp.show([["Church", -0.0822099362122811], ["Scientology", -0.06441797165019507], ["raid", -0.03633507079380627], ["Belgium", 0.009909996430190698], ["Authorities", 0.0018875058884619223]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Church", 25, -0.08128790818117962], ["Scientology", 32, -0.06484971363130146], ["raid", 20, -0.03691758113051003], ["Belgium", 12, 0.009715895808876853], ["Authorities", 0, 0.0016715048262300114]], 1, "Authorities Belgium raid Church Scientology", raw_div, true);
+            exp.show_raw_text([["Church", 25, -0.0822099362122811], ["Scientology", 32, -0.06441797165019507], ["raid", 20, -0.03633507079380627], ["Belgium", 12, 0.009909996430190698], ["Authorities", 0, 0.0018875058884619223]], 1, "Authorities Belgium raid Church Scientology", raw_div, true);
             
         </script>
         </body></html>

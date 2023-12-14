@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div1VF15BJZJYSNGPQ"></div>
+        <div class="lime top_div" id="top_divLIKVBN6GNA4C4YL"></div>
         
         <script>
-        var top_div = d3.select('#top_div1VF15BJZJYSNGPQ').classed('lime top_div', true);
+        var top_div = d3.select('#top_divLIKVBN6GNA4C4YL').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.28236008399897694, 0.7176399160010231]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.2822872738114245, 0.7177127261885755]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Movie", 0.14354209701853649], ["Posters", 0.07755811562768858], ["Significantly", -0.0390405402689408], ["Amazon", -0.035813567864049434], ["Improved", -0.009312542071854935], ["Reviews", -0.004148742997058113]], 1, exp_div);
+                exp.show([["Movie", 0.1433692945150375], ["Posters", 0.07747303475573762], ["Significantly", -0.03975809317527578], ["Amazon", -0.03491166018461589], ["Improved", -0.00994854681785019], ["Reviews", -0.004496283351050796]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Movie", 1, 0.14354209701853649], ["Posters", 7, 0.07755811562768858], ["Significantly", 15, -0.0390405402689408], ["Amazon", 38, -0.035813567864049434], ["Improved", 29, -0.009312542071854935], ["Reviews", 45, -0.004148742997058113]], 1, " Movie Posters Significantly Improved Amazon Reviews", raw_div, true);
+            exp.show_raw_text([["Movie", 1, 0.1433692945150375], ["Posters", 7, 0.07747303475573762], ["Significantly", 15, -0.03975809317527578], ["Amazon", 38, -0.03491166018461589], ["Improved", 29, -0.00994854681785019], ["Reviews", 45, -0.004496283351050796]], 1, " Movie Posters Significantly Improved Amazon Reviews", raw_div, true);
             
         </script>
         </body></html>

@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divED7BYPNOMV2Q8VP"></div>
+        <div class="lime top_div" id="top_divDN24TU4NNNL2GHI"></div>
         
         <script>
-        var top_div = d3.select('#top_divED7BYPNOMV2Q8VP').classed('lime top_div', true);
+        var top_div = d3.select('#top_divDN24TU4NNNL2GHI').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6317529938497044, 0.36824700615029565]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6323502057557602, 0.36764979424423977]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["approves", -0.08515613784328559], ["domain", -0.026310209326104488], ["xxx", 0.016691655976408048], ["ICANN", 0.009905019329779132], ["pornography", 0.0026438112367975298]], 1, exp_div);
+                exp.show([["approves", -0.08546477055708103], ["domain", -0.026656965963074403], ["xxx", 0.016512633048259548], ["ICANN", 0.00901893504266484], ["pornography", 0.0025736170184324763]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["approves", 6, -0.08515613784328559], ["domain", 19, -0.026310209326104488], ["xxx", 15, 0.016691655976408048], ["ICANN", 0, 0.009905019329779132], ["pornography", 26, 0.0026438112367975298]], 1, "ICANN approves xxx domain pornography", raw_div, true);
+            exp.show_raw_text([["approves", 6, -0.08546477055708103], ["domain", 19, -0.026656965963074403], ["xxx", 15, 0.016512633048259548], ["ICANN", 0, 0.00901893504266484], ["pornography", 26, 0.0025736170184324763]], 1, "ICANN approves xxx domain pornography", raw_div, true);
             
         </script>
         </body></html>

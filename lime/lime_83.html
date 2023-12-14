@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divIYSHD6C3IJKG601"></div>
+        <div class="lime top_div" id="top_div2H82VUOORT1LSZ2"></div>
         
         <script>
-        var top_div = d3.select('#top_divIYSHD6C3IJKG601').classed('lime top_div', true);
+        var top_div = d3.select('#top_div2H82VUOORT1LSZ2').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.39608502818939473, 0.6039149718106053]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.39645667139276564, 0.6035433286072344]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Stuffed", 0.047210604769795154], ["Bread", 0.04182444112487479], ["Garlic", -0.012959522313526898], ["Spinach", -0.006975929233212604], ["Artichoke", -0.0018587606198165693]], 1, exp_div);
+                exp.show([["Stuffed", 0.04706725635160985], ["Bread", 0.04144538927118825], ["Garlic", -0.012762299773760798], ["Spinach", -0.00727490954650619], ["Artichoke", -0.0019511731360996323]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Stuffed", 18, 0.047210604769795154], ["Bread", 33, 0.04182444112487479], ["Garlic", 26, -0.012959522313526898], ["Spinach", 0, -0.006975929233212604], ["Artichoke", 8, -0.0018587606198165693]], 1, "Spinach Artichoke Stuffed Garlic Bread", raw_div, true);
+            exp.show_raw_text([["Stuffed", 18, 0.04706725635160985], ["Bread", 33, 0.04144538927118825], ["Garlic", 26, -0.012762299773760798], ["Spinach", 0, -0.00727490954650619], ["Artichoke", 8, -0.0019511731360996323]], 1, "Spinach Artichoke Stuffed Garlic Bread", raw_div, true);
             
         </script>
         </body></html>

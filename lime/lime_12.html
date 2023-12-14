@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divSHDE3QDZXOCL33P"></div>
+        <div class="lime top_div" id="top_divER84AL5FOTIG8WQ"></div>
         
         <script>
-        var top_div = d3.select('#top_divSHDE3QDZXOCL33P').classed('lime top_div', true);
+        var top_div = d3.select('#top_divER84AL5FOTIG8WQ').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.08754003979049663, 0.9124599602095034]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.08753103654827954, 0.9124689634517205]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Everyone", 0.16233607018217877], ["Friend", 0.048404893028194736], ["Drunk", 0.022422276864002045], ["Knows", 0.0009464975772841385], ["Types", 3.238892506023348e-05]], 1, exp_div);
+                exp.show([["Everyone", 0.1603252098615235], ["Friend", 0.049418410177271554], ["Drunk", 0.023845506756483482], ["Knows", 0.0013942289983477829], ["Types", -0.0005383310277446044]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Everyone", 20, 0.16233607018217877], ["Friend", 13, 0.048404893028194736], ["Drunk", 7, 0.022422276864002045], ["Knows", 29, 0.0009464975772841385], ["Types", 1, 3.238892506023348e-05]], 1, " Types Drunk Friend Everyone Knows", raw_div, true);
+            exp.show_raw_text([["Everyone", 20, 0.1603252098615235], ["Friend", 13, 0.049418410177271554], ["Drunk", 7, 0.023845506756483482], ["Knows", 29, 0.0013942289983477829], ["Types", 1, -0.0005383310277446044]], 1, " Types Drunk Friend Everyone Knows", raw_div, true);
             
         </script>
         </body></html>

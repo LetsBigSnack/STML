@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divGZ2C0JUSAFQNA0R"></div>
+        <div class="lime top_div" id="top_divWB7BBT1J4JAIGLF"></div>
         
         <script>
-        var top_div = d3.select('#top_divGZ2C0JUSAFQNA0R').classed('lime top_div', true);
+        var top_div = d3.select('#top_divWB7BBT1J4JAIGLF').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.17896364972965007, 0.8210363502703499]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.17851976823886118, 0.8214802317611388]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Anyone", 0.17317773206741002], ["Real", 0.14964429367504378], ["Catholic", -0.06996965568660482], ["Raised", -0.05218290721118378], ["Frustrations", 0.0013537573940390472]], 1, exp_div);
+                exp.show([["Anyone", 0.17318541491915224], ["Real", 0.14936275600956592], ["Catholic", -0.06824054553956803], ["Raised", -0.0525027290309195], ["Frustrations", 0.0018920623350923798]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Anyone", 19, 0.17317773206741002], ["Real", 14, 0.14964429367504378], ["Catholic", 33, -0.06996965568660482], ["Raised", 26, -0.05218290721118378], ["Frustrations", 1, 0.0013537573940390472]], 1, " Frustrations Real Anyone Raised Catholic", raw_div, true);
+            exp.show_raw_text([["Anyone", 19, 0.17318541491915224], ["Real", 14, 0.14936275600956592], ["Catholic", 33, -0.06824054553956803], ["Raised", 26, -0.0525027290309195], ["Frustrations", 1, 0.0018920623350923798]], 1, " Frustrations Real Anyone Raised Catholic", raw_div, true);
             
         </script>
         </body></html>

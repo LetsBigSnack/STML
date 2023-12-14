@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divAC175UQTNFCIZI9"></div>
+        <div class="lime top_div" id="top_divL9BCEF0V0ADR1S6"></div>
         
         <script>
-        var top_div = d3.select('#top_divAC175UQTNFCIZI9').classed('lime top_div', true);
+        var top_div = d3.select('#top_divL9BCEF0V0ADR1S6').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.9252165501075752, 0.07478344989242479]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.9250069454289652, 0.07499305457103479]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Iraq", -0.10347417756882282], ["United", -0.06293135266876096], ["States", -0.05515126532402132], ["Florida", -0.03977439431775624], ["Teenager", 0.03694120529948373], ["school", 0.022222833576794998], ["goes", -0.0209348593960338], ["skips", -0.0019702044307158286]], 1, exp_div);
+                exp.show([["Iraq", -0.10643091793720973], ["United", -0.06448414340423729], ["States", -0.05580009947713492], ["Florida", -0.0403347631059326], ["Teenager", 0.037665070210373665], ["school", 0.02460604158162127], ["goes", -0.021651735329258542], ["skips", -0.0016733668094115405]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Iraq", 49, -0.10347417756882282], ["United", 17, -0.06293135266876096], ["States", 24, -0.05515126532402132], ["Florida", 9, -0.03977439431775624], ["Teenager", 0, 0.03694120529948373], ["school", 37, 0.022222833576794998], ["goes", 44, -0.0209348593960338], ["skips", 31, -0.0019702044307158286]], 1, "Teenager Florida United States skips school goes Iraq", raw_div, true);
+            exp.show_raw_text([["Iraq", 49, -0.10643091793720973], ["United", 17, -0.06448414340423729], ["States", 24, -0.05580009947713492], ["Florida", 9, -0.0403347631059326], ["Teenager", 0, 0.037665070210373665], ["school", 37, 0.02460604158162127], ["goes", 44, -0.021651735329258542], ["skips", 31, -0.0016733668094115405]], 1, "Teenager Florida United States skips school goes Iraq", raw_div, true);
             
         </script>
         </body></html>

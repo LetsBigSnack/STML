@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divKNSZ7CKNF4F6V3S"></div>
+        <div class="lime top_div" id="top_div8WH6OYZP85KRCDV"></div>
         
         <script>
-        var top_div = d3.select('#top_divKNSZ7CKNF4F6V3S').classed('lime top_div', true);
+        var top_div = d3.select('#top_div8WH6OYZP85KRCDV').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.5715720667653195, 0.42842793323468054]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.5716587362917226, 0.4283412637082774]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Wales", -0.08654020808615126], ["Breathtakingly", 0.032630879917924745], ["Locations", 0.008727507248154433], ["Photographic", -0.0007028512720663763]], 1, exp_div);
+                exp.show([["Wales", -0.08694528412678867], ["Breathtakingly", 0.03343468156905209], ["Locations", 0.010023996410998454], ["Photographic", -0.0003638407112279663]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Wales", 39, -0.08654020808615126], ["Breathtakingly", 1, 0.032630879917924745], ["Locations", 29, 0.008727507248154433], ["Photographic", 16, -0.0007028512720663763]], 1, " Breathtakingly Photographic Locations Wales", raw_div, true);
+            exp.show_raw_text([["Wales", 39, -0.08694528412678867], ["Breathtakingly", 1, 0.03343468156905209], ["Locations", 29, 0.010023996410998454], ["Photographic", 16, -0.0003638407112279663]], 1, " Breathtakingly Photographic Locations Wales", raw_div, true);
             
         </script>
         </body></html>

@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divXC8PF41RBQJNCEE"></div>
+        <div class="lime top_div" id="top_divFHO60AZXX8MP9H5"></div>
         
         <script>
-        var top_div = d3.select('#top_divXC8PF41RBQJNCEE').classed('lime top_div', true);
+        var top_div = d3.select('#top_divFHO60AZXX8MP9H5').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.11324404399316501, 0.886755956006835]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.11354443894963562, 0.8864555610503644]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Need", 0.17010816686683475], ["Guys", 0.10212028779648313], ["Basketball", -0.06910844074377588], ["Talk", 0.04384592780004815], ["Shorts", -0.02768359659681965], ["Wearing", 0.017320689014713387]], 1, exp_div);
+                exp.show([["Need", 0.17018851230249743], ["Guys", 0.1030282615059729], ["Basketball", -0.06840249240301438], ["Talk", 0.04526763231523014], ["Shorts", -0.028874972826043864], ["Wearing", 0.016233124784669636]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Need", 0, 0.17010816686683475], ["Guys", 10, 0.10212028779648313], ["Basketball", 23, -0.06910844074377588], ["Talk", 5, 0.04384592780004815], ["Shorts", 34, -0.02768359659681965], ["Wearing", 15, 0.017320689014713387]], 1, "Need Talk Guys Wearing Basketball Shorts", raw_div, true);
+            exp.show_raw_text([["Need", 0, 0.17018851230249743], ["Guys", 10, 0.1030282615059729], ["Basketball", 23, -0.06840249240301438], ["Talk", 5, 0.04526763231523014], ["Shorts", 34, -0.028874972826043864], ["Wearing", 15, 0.016233124784669636]], 1, "Need Talk Guys Wearing Basketball Shorts", raw_div, true);
             
         </script>
         </body></html>

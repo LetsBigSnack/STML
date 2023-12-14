@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div5ECICZIYBI126K5"></div>
+        <div class="lime top_div" id="top_divL1SZHSNB4E3NE10"></div>
         
         <script>
-        var top_div = d3.select('#top_div5ECICZIYBI126K5').classed('lime top_div', true);
+        var top_div = d3.select('#top_divL1SZHSNB4E3NE10').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.1399907079839663, 0.8600092920160337]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.1405671757871736, 0.8594328242128264]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Try", 0.11272964876963204], ["Awesome", 0.07912854437761462], ["Holiday", 0.050166946408545694], ["Family", -0.02498558910264779], ["Traditions", -0.017335897689543536], ["Year", 0.011789836026265196]], 1, exp_div);
+                exp.show([["Try", 0.11166217767795958], ["Awesome", 0.07832281729904786], ["Holiday", 0.04990554907846825], ["Family", -0.023647994416983186], ["Traditions", -0.0175703275109749], ["Year", 0.010365373574087974]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Try", 35, 0.11272964876963204], ["Awesome", 1, 0.07912854437761462], ["Holiday", 9, 0.050166946408545694], ["Family", 28, -0.02498558910264779], ["Traditions", 17, -0.017335897689543536], ["Year", 39, 0.011789836026265196]], 1, " Awesome Holiday Traditions Family Try Year", raw_div, true);
+            exp.show_raw_text([["Try", 35, 0.11166217767795958], ["Awesome", 1, 0.07832281729904786], ["Holiday", 9, 0.04990554907846825], ["Family", 28, -0.023647994416983186], ["Traditions", 17, -0.0175703275109749], ["Year", 39, 0.010365373574087974]], 1, " Awesome Holiday Traditions Family Try Year", raw_div, true);
             
         </script>
         </body></html>

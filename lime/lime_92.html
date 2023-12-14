@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divUUE181ND0GL382S"></div>
+        <div class="lime top_div" id="top_div0OPBW4KOW6P83OB"></div>
         
         <script>
-        var top_div = d3.select('#top_divUUE181ND0GL382S').classed('lime top_div', true);
+        var top_div = d3.select('#top_div0OPBW4KOW6P83OB').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.11290653364226733, 0.8870934663577327]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.11312426922655716, 0.8868757307734428]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Best", 0.1325245467409542], ["Ever", 0.09427596391976532], ["Helen", -0.03984589279970087], ["Night", 0.011969278322414621], ["Shes", 0.00629025388416786], ["Looked", 0.003980133187427088], ["Mirren", 0.001733893159396815], ["Last", -0.0014023646210076818]], 1, exp_div);
+                exp.show([["Best", 0.1328165111644288], ["Ever", 0.09675479573710201], ["Helen", -0.039958746769338534], ["Night", 0.012146466758645854], ["Shes", 0.006607459267242041], ["Looked", 0.0037632450733025525], ["Last", -0.0022451339030037038], ["Mirren", 0.0013010372350030566]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Best", 20, 0.1325245467409542], ["Ever", 30, 0.09427596391976532], ["Helen", 0, -0.03984589279970087], ["Night", 47, 0.011969278322414621], ["Shes", 25, 0.00629025388416786], ["Looked", 13, 0.003980133187427088], ["Looked", 35, 0.003980133187427088], ["Mirren", 6, 0.001733893159396815], ["Last", 42, -0.0014023646210076818]], 1, "Helen Mirren Looked Best Shes Ever Looked Last Night", raw_div, true);
+            exp.show_raw_text([["Best", 20, 0.1328165111644288], ["Ever", 30, 0.09675479573710201], ["Helen", 0, -0.039958746769338534], ["Night", 47, 0.012146466758645854], ["Shes", 25, 0.006607459267242041], ["Looked", 13, 0.0037632450733025525], ["Looked", 35, 0.0037632450733025525], ["Last", 42, -0.0022451339030037038], ["Mirren", 6, 0.0013010372350030566]], 1, "Helen Mirren Looked Best Shes Ever Looked Last Night", raw_div, true);
             
         </script>
         </body></html>

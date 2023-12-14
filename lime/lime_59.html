@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div46J43C4IK1JZ9Z8"></div>
+        <div class="lime top_div" id="top_div2NWCLSXRL4J9TEX"></div>
         
         <script>
-        var top_div = d3.select('#top_div46J43C4IK1JZ9Z8').classed('lime top_div', true);
+        var top_div = d3.select('#top_div2NWCLSXRL4J9TEX').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.22032132140110217, 0.7796786785988978]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.22109713516314766, 0.7789028648368523]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Times", 0.19739987990232238], ["Us", -0.177176700228065], ["Get", 0.1382798013222586], ["Murder", -0.09222650450489639], ["Gave", 0.08852163944221185], ["Cast", 0.0866470719707933], ["Away", -0.03906639147024663], ["Squad", 0.027802623278105065], ["Serious", -0.014325229131630335], ["Goals", 0.0033089740742770647]], 1, exp_div);
+                exp.show([["Times", 0.19780760848113604], ["Us", -0.17360224212400255], ["Get", 0.1355324033505924], ["Murder", -0.09313999613452796], ["Cast", 0.08690431858263838], ["Gave", 0.08575776695467699], ["Away", -0.04022397469876333], ["Squad", 0.026697623467598717], ["Serious", -0.011849354745632805], ["Goals", -0.0004360060418401986]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Times", 1, 0.19739987990232238], ["Us", 33, -0.177176700228065], ["Get", 7, 0.1382798013222586], ["Murder", 16, -0.09222650450489639], ["Gave", 28, 0.08852163944221185], ["Cast", 23, 0.0866470719707933], ["Away", 11, -0.03906639147024663], ["Squad", 44, 0.027802623278105065], ["Serious", 36, -0.014325229131630335], ["Goals", 50, 0.0033089740742770647]], 1, " Times Get Away Murder Cast Gave Us Serious Squad Goals", raw_div, true);
+            exp.show_raw_text([["Times", 1, 0.19780760848113604], ["Us", 33, -0.17360224212400255], ["Get", 7, 0.1355324033505924], ["Murder", 16, -0.09313999613452796], ["Cast", 23, 0.08690431858263838], ["Gave", 28, 0.08575776695467699], ["Away", 11, -0.04022397469876333], ["Squad", 44, 0.026697623467598717], ["Serious", 36, -0.011849354745632805], ["Goals", 50, -0.0004360060418401986]], 1, " Times Get Away Murder Cast Gave Us Serious Squad Goals", raw_div, true);
             
         </script>
         </body></html>

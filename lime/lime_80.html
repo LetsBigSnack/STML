@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divGF5V7SRD3A829RQ"></div>
+        <div class="lime top_div" id="top_divZZ3N46J9CF1ARX4"></div>
         
         <script>
-        var top_div = d3.select('#top_divGF5V7SRD3A829RQ').classed('lime top_div', true);
+        var top_div = d3.select('#top_divZZ3N46J9CF1ARX4').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.08410819404368719, 0.9158918059563128]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.08472919116080935, 0.9152708088391907]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Things", 0.23213849481854698], ["Know", 0.18575783321221156], ["Boston", -0.08678371464226584], ["University", -0.07190893128623269], ["True", 0.0642763710613981], ["Students", -0.03321726882801774]], 1, exp_div);
+                exp.show([["Things", 0.22843535159645803], ["Know", 0.18496049958565844], ["Boston", -0.08275203620461924], ["University", -0.0687733977941239], ["True", 0.0654968869500534], ["Students", -0.03212246966551933]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Things", 1, 0.23213849481854698], ["Know", 35, 0.18575783321221156], ["Boston", 8, -0.08678371464226584], ["University", 15, -0.07190893128623269], ["True", 40, 0.0642763710613981], ["Students", 26, -0.03321726882801774]], 1, " Things Boston University Students Know True", raw_div, true);
+            exp.show_raw_text([["Things", 1, 0.22843535159645803], ["Know", 35, 0.18496049958565844], ["Boston", 8, -0.08275203620461924], ["University", 15, -0.0687733977941239], ["True", 40, 0.0654968869500534], ["Students", 26, -0.03212246966551933]], 1, " Things Boston University Students Know True", raw_div, true);
             
         </script>
         </body></html>

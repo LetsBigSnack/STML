@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div07CF9LWLTJ3GK5M"></div>
+        <div class="lime top_div" id="top_div72HAN167O7TNFSB"></div>
         
         <script>
-        var top_div = d3.select('#top_div07CF9LWLTJ3GK5M').classed('lime top_div', true);
+        var top_div = d3.select('#top_div72HAN167O7TNFSB').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.12219239784726688, 0.8778076021527331]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.12364943419980545, 0.8763505658001945]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Times", 0.17215969267961642], ["Us", -0.1478655479993943], ["Instagram", 0.12413883990995145], ["AF", 0.09115032418129987], ["Harry", 0.07151939380485368], ["Left", -0.057251171318780256], ["Confused", 0.018481386493451452], ["Styles", 0.004388660284923107]], 1, exp_div);
+                exp.show([["Times", 0.17469754212313607], ["Us", -0.15146447911541383], ["Instagram", 0.1269024320964409], ["AF", 0.09112402822629556], ["Harry", 0.07064035839588877], ["Left", -0.0576356786621221], ["Confused", 0.015812727104236934], ["Styles", 0.006726355537241513]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Times", 1, 0.17215969267961642], ["Us", 35, -0.1478655479993943], ["Instagram", 20, 0.12413883990995145], ["AF", 47, 0.09115032418129987], ["Harry", 7, 0.07151939380485368], ["Left", 30, -0.057251171318780256], ["Confused", 38, 0.018481386493451452], ["Styles", 13, 0.004388660284923107]], 1, " Times Harry Styles Instagram Left Us Confused AF", raw_div, true);
+            exp.show_raw_text([["Times", 1, 0.17469754212313607], ["Us", 35, -0.15146447911541383], ["Instagram", 20, 0.1269024320964409], ["AF", 47, 0.09112402822629556], ["Harry", 7, 0.07064035839588877], ["Left", 30, -0.0576356786621221], ["Confused", 38, 0.015812727104236934], ["Styles", 13, 0.006726355537241513]], 1, " Times Harry Styles Instagram Left Us Confused AF", raw_div, true);
             
         </script>
         </body></html>

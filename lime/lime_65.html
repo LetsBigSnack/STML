@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divD567B47Z0HHW96D"></div>
+        <div class="lime top_div" id="top_divRKFELS2IYN7QVBY"></div>
         
         <script>
-        var top_div = d3.select('#top_divD567B47Z0HHW96D').classed('lime top_div', true);
+        var top_div = d3.select('#top_divRKFELS2IYN7QVBY').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.508978609945453, 0.4910213900545471]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.5089586311618342, 0.4910413688381658]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Cinderella", -0.0066374949972966115], ["Maleficent", 0.0023267121870799105]], 1, exp_div);
+                exp.show([["Cinderella", -0.0066165013951384926], ["Maleficent", 0.0023279373714139356]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Cinderella", 0, -0.0066374949972966115], ["Maleficent", 11, 0.0023267121870799105]], 1, "Cinderella Maleficent", raw_div, true);
+            exp.show_raw_text([["Cinderella", 0, -0.0066165013951384926], ["Maleficent", 11, 0.0023279373714139356]], 1, "Cinderella Maleficent", raw_div, true);
             
         </script>
         </body></html>

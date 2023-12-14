@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divODXQ9S2M60GBO8M"></div>
+        <div class="lime top_div" id="top_divC5BYC4VF0MNV54B"></div>
         
         <script>
-        var top_div = d3.select('#top_divODXQ9S2M60GBO8M').classed('lime top_div', true);
+        var top_div = d3.select('#top_divC5BYC4VF0MNV54B').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.15339653583720692, 0.8466034641627931]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.1533006931724783, 0.8466993068275217]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Thatll", 0.10383326530253266], ["Give", 0.08455581066068564], ["Feels", 0.02719001657298717], ["Rings", -0.013459482244534412], ["Simple", 0.00355655936792585]], 1, exp_div);
+                exp.show([["Thatll", 0.10340783185576778], ["Give", 0.08374291928418191], ["Feels", 0.025211150536696942], ["Rings", -0.013620048093951233], ["Simple", 0.0023783390162321555]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Thatll", 14, 0.10383326530253266], ["Give", 21, 0.08455581066068564], ["Feels", 26, 0.02719001657298717], ["Rings", 8, -0.013459482244534412], ["Simple", 1, 0.00355655936792585]], 1, " Simple Rings Thatll Give Feels", raw_div, true);
+            exp.show_raw_text([["Thatll", 14, 0.10340783185576778], ["Give", 21, 0.08374291928418191], ["Feels", 26, 0.025211150536696942], ["Rings", 8, -0.013620048093951233], ["Simple", 1, 0.0023783390162321555]], 1, " Simple Rings Thatll Give Feels", raw_div, true);
             
         </script>
         </body></html>

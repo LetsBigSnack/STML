@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divRRVZQFH78K6L3I8"></div>
+        <div class="lime top_div" id="top_div65U4K0FDT157AUF"></div>
         
         <script>
-        var top_div = d3.select('#top_divRRVZQFH78K6L3I8').classed('lime top_div', true);
+        var top_div = d3.select('#top_div65U4K0FDT157AUF').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6654137095733771, 0.3345862904266229]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6658733783208975, 0.33412662167910245]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Win", -0.13412563792333937], ["Lindsey", 0.01717488554935971], ["Vonn", 0.010498585798314584], ["Downhill", 0.007832953666206415], ["Edges", -0.006263665680280974], ["Dominique", 0.0028309496662005046], ["Gisin", 0.00016530283124243468]], 1, exp_div);
+                exp.show([["Win", -0.13331285612214713], ["Lindsey", 0.016537007417725152], ["Vonn", 0.010142780635222814], ["Downhill", 0.007289859788045803], ["Edges", -0.006600327627426357], ["Dominique", 0.002258998949149224], ["Gisin", -0.0008605213849596627]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Win", 35, -0.13412563792333937], ["Lindsey", 22, 0.01717488554935971], ["Vonn", 30, 0.010498585798314584], ["Downhill", 39, 0.007832953666206415], ["Edges", 16, -0.006263665680280974], ["Dominique", 0, 0.0028309496662005046], ["Gisin", 10, 0.00016530283124243468]], 1, "Dominique Gisin Edges Lindsey Vonn Win Downhill", raw_div, true);
+            exp.show_raw_text([["Win", 35, -0.13331285612214713], ["Lindsey", 22, 0.016537007417725152], ["Vonn", 30, 0.010142780635222814], ["Downhill", 39, 0.007289859788045803], ["Edges", 16, -0.006600327627426357], ["Dominique", 0, 0.002258998949149224], ["Gisin", 10, -0.0008605213849596627]], 1, "Dominique Gisin Edges Lindsey Vonn Win Downhill", raw_div, true);
             
         </script>
         </body></html>

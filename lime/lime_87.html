@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divCG97GB2HGVJRT85"></div>
+        <div class="lime top_div" id="top_div6C9XSIMRGOFHXLP"></div>
         
         <script>
-        var top_div = d3.select('#top_divCG97GB2HGVJRT85').classed('lime top_div', true);
+        var top_div = d3.select('#top_div6C9XSIMRGOFHXLP').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.016767786003213492, 0.9832322139967865]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.01683624003455053, 0.9831637599654495]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Things", 0.09867205222402313], ["People", 0.0893319744677216], ["Women", 0.03843151888697166], ["Used", -0.021324887636436553], ["Crazy", 0.005838254091172758], ["Believe", 0.004193205001691597], ["s", 0.0005622246369347353]], 1, exp_div);
+                exp.show([["Things", 0.09838942547539752], ["People", 0.08736446945938654], ["Women", 0.03737327218298873], ["Used", -0.020449287409280335], ["Crazy", 0.007363565262719552], ["Believe", 0.003011684727169044], ["s", 0.0026116754597354653]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Things", 6, 0.09867205222402313], ["People", 13, 0.0893319744677216], ["Women", 33, 0.03843151888697166], ["Used", 20, -0.021324887636436553], ["Crazy", 0, 0.005838254091172758], ["Believe", 25, 0.004193205001691597], ["s", 39, 0.0005622246369347353]], 1, "Crazy Things People Used Believe Women s", raw_div, true);
+            exp.show_raw_text([["Things", 6, 0.09838942547539752], ["People", 13, 0.08736446945938654], ["Women", 33, 0.03737327218298873], ["Used", 20, -0.020449287409280335], ["Crazy", 0, 0.007363565262719552], ["Believe", 25, 0.003011684727169044], ["s", 39, 0.0026116754597354653]], 1, "Crazy Things People Used Believe Women s", raw_div, true);
             
         </script>
         </body></html>

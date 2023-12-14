@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divM7TG2VM8DSBSHFH"></div>
+        <div class="lime top_div" id="top_divZY1QEXE6ILCIJV2"></div>
         
         <script>
-        var top_div = d3.select('#top_divM7TG2VM8DSBSHFH').classed('lime top_div', true);
+        var top_div = d3.select('#top_divZY1QEXE6ILCIJV2').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7840515360827118, 0.21594846391728817]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.7851337924752463, 0.21486620752475372]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Votes", -0.0767066962037595], ["India", -0.06424410096712914], ["Issues", -0.027493019104764697], ["Local", -0.01939309794286193], ["Dominate", 0.014820325514318729]], 1, exp_div);
+                exp.show([["Votes", -0.07651493532772811], ["India", -0.06397903218694849], ["Issues", -0.027692056375115928], ["Local", -0.01956237884077021], ["Dominate", 0.014864303188099639]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Votes", 28, -0.0767066962037595], ["India", 22, -0.06424410096712914], ["Issues", 6, -0.027493019104764697], ["Local", 0, -0.01939309794286193], ["Dominate", 13, 0.014820325514318729]], 1, "Local Issues Dominate India Votes", raw_div, true);
+            exp.show_raw_text([["Votes", 28, -0.07651493532772811], ["India", 22, -0.06397903218694849], ["Issues", 6, -0.027692056375115928], ["Local", 0, -0.01956237884077021], ["Dominate", 13, 0.014864303188099639]], 1, "Local Issues Dominate India Votes", raw_div, true);
             
         </script>
         </body></html>

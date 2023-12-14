@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divZGB54PCGP3F1YEZ"></div>
+        <div class="lime top_div" id="top_div09015OSQ3GLMKIM"></div>
         
         <script>
-        var top_div = d3.select('#top_divZGB54PCGP3F1YEZ').classed('lime top_div', true);
+        var top_div = d3.select('#top_div09015OSQ3GLMKIM').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.15088157055218665, 0.8491184294478133]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.151960424176514, 0.848039575823486]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Need", 0.19208030837195356], ["Get", 0.13263345109981425], ["Exercises", -0.05363567546427077], ["Shape", -0.036851824791607], ["Anywhere", -0.02622941446248855]], 1, exp_div);
+                exp.show([["Need", 0.19288938901338581], ["Get", 0.13392530740104655], ["Exercises", -0.05264437190277062], ["Shape", -0.036202024396633385], ["Anywhere", -0.02506660270589506]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Need", 11, 0.19208030837195356], ["Get", 16, 0.13263345109981425], ["Exercises", 1, -0.05363567546427077], ["Shape", 20, -0.036851824791607], ["Anywhere", 26, -0.02622941446248855]], 1, " Exercises Need Get Shape Anywhere", raw_div, true);
+            exp.show_raw_text([["Need", 11, 0.19288938901338581], ["Get", 16, 0.13392530740104655], ["Exercises", 1, -0.05264437190277062], ["Shape", 20, -0.036202024396633385], ["Anywhere", 26, -0.02506660270589506]], 1, " Exercises Need Get Shape Anywhere", raw_div, true);
             
         </script>
         </body></html>

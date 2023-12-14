@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divCFPGJTTTOG9PK87"></div>
+        <div class="lime top_div" id="top_div2FG15YGOZFEPSEN"></div>
         
         <script>
-        var top_div = d3.select('#top_divCFPGJTTTOG9PK87').classed('lime top_div', true);
+        var top_div = d3.select('#top_div2FG15YGOZFEPSEN').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.028017812678385767, 0.9719821873216142]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.028089362068383417, 0.9719106379316166]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Character", 0.08861892217640183], ["Based", 0.08165067417223192], ["Zodiac", 0.04913177654152217], ["Clueless", -0.03810742634638326], ["Sign", 0.018739334261549803]], 1, exp_div);
+                exp.show([["Character", 0.09005192937752116], ["Based", 0.08539957108470671], ["Zodiac", 0.05052131778907268], ["Clueless", -0.040264989326905955], ["Sign", 0.019536497047148854]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Character", 9, 0.08861892217640183], ["Based", 19, 0.08165067417223192], ["Zodiac", 25, 0.04913177654152217], ["Clueless", 0, -0.03810742634638326], ["Sign", 32, 0.018739334261549803]], 1, "Clueless Character Based Zodiac Sign", raw_div, true);
+            exp.show_raw_text([["Character", 9, 0.09005192937752116], ["Based", 19, 0.08539957108470671], ["Zodiac", 25, 0.05052131778907268], ["Clueless", 0, -0.040264989326905955], ["Sign", 32, 0.019536497047148854]], 1, "Clueless Character Based Zodiac Sign", raw_div, true);
             
         </script>
         </body></html>

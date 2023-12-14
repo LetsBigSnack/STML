@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div894K4J8J6PRFCXD"></div>
+        <div class="lime top_div" id="top_divG3FV55U6S1O12CV"></div>
         
         <script>
-        var top_div = d3.select('#top_div894K4J8J6PRFCXD').classed('lime top_div', true);
+        var top_div = d3.select('#top_divG3FV55U6S1O12CV').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.12656779465278167, 0.8734322053472183]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.12642606007014778, 0.8735739399298522]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Best", 0.19015691539180282], ["Thing", 0.11242844798470157], ["Readers", -0.048098783128323094], ["App", -0.017112998244503158], ["Comic", -0.009000566361263472]], 1, exp_div);
+                exp.show([["Best", 0.19102082049461758], ["Thing", 0.11152868097461968], ["Readers", -0.04998166984726651], ["App", -0.01890159789420683], ["Comic", -0.011606318878821053]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Best", 4, 0.19015691539180282], ["Thing", 9, 0.11242844798470157], ["Readers", 21, -0.048098783128323094], ["App", 0, -0.017112998244503158], ["Comic", 15, -0.009000566361263472]], 1, "App Best Thing Comic Readers", raw_div, true);
+            exp.show_raw_text([["Best", 4, 0.19102082049461758], ["Thing", 9, 0.11152868097461968], ["Readers", 21, -0.04998166984726651], ["App", 0, -0.01890159789420683], ["Comic", 15, -0.011606318878821053]], 1, "App Best Thing Comic Readers", raw_div, true);
             
         </script>
         </body></html>

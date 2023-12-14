@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divJW4IM5I5SCN4MFB"></div>
+        <div class="lime top_div" id="top_divYOKLHUQUJDM6EF7"></div>
         
         <script>
-        var top_div = d3.select('#top_divJW4IM5I5SCN4MFB').classed('lime top_div', true);
+        var top_div = d3.select('#top_divYOKLHUQUJDM6EF7').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8667316225582532, 0.13326837744174683]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.8661359508709942, 0.13386404912900587]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["arrested", -0.09905952473590554], ["protest", -0.06111530092462834], ["Bill", -0.05726485923586569], ["Health", -0.03890439057042648], ["Cathedral", 0.026324017338962988], ["Manila", 0.024351671329715604], ["Filipino", 0.02041151983758131], ["mass", -0.016700550114573914], ["activist", 0.0010696303127766399], ["Reproductive", -0.0007723667184521344]], 1, exp_div);
+                exp.show([["arrested", -0.1002656220128315], ["protest", -0.06277483086061163], ["Bill", -0.05827944406552702], ["Health", -0.03960427852915873], ["Cathedral", 0.027356569788362112], ["Manila", 0.02461302826949995], ["Filipino", 0.02142954378743811], ["mass", -0.017035173569176724], ["activist", 0.0013118269440372814], ["disrupting", 0.0008447932291325525]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["arrested", 18, -0.09905952473590554], ["protest", 85, -0.06111530092462834], ["Bill", 80, -0.05726485923586569], ["Health", 73, -0.03890439057042648], ["Cathedral", 45, 0.026324017338962988], ["Manila", 38, 0.024351671329715604], ["Filipino", 0, 0.02041151983758131], ["mass", 55, -0.016700550114573914], ["activist", 9, 0.0010696303127766399], ["Reproductive", 60, -0.0007723667184521344]], 1, "Filipino activist arrested disrupting Manila Cathedral mass Reproductive Health Bill protest", raw_div, true);
+            exp.show_raw_text([["arrested", 18, -0.1002656220128315], ["protest", 85, -0.06277483086061163], ["Bill", 80, -0.05827944406552702], ["Health", 73, -0.03960427852915873], ["Cathedral", 45, 0.027356569788362112], ["Manila", 38, 0.02461302826949995], ["Filipino", 0, 0.02142954378743811], ["mass", 55, -0.017035173569176724], ["activist", 9, 0.0013118269440372814], ["disrupting", 27, 0.0008447932291325525]], 1, "Filipino activist arrested disrupting Manila Cathedral mass Reproductive Health Bill protest", raw_div, true);
             
         </script>
         </body></html>

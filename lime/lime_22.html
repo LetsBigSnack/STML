@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div4O0M9LQ2LYYFDV7"></div>
+        <div class="lime top_div" id="top_divEVHR4JOR5AZE0KX"></div>
         
         <script>
-        var top_div = d3.select('#top_div4O0M9LQ2LYYFDV7').classed('lime top_div', true);
+        var top_div = d3.select('#top_divEVHR4JOR5AZE0KX').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6632778531917631, 0.3367221468082369]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.6637646455641093, 0.33623535443589075]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Public", -0.09517670668847182], ["Bring", 0.03646932318145196], ["Net", -0.03463042405038497], ["Inquiries", -0.019859877739505902], ["EInquiries", -0.000974422166708546]], 1, exp_div);
+                exp.show([["Public", -0.09548160232553472], ["Bring", 0.03694314825911048], ["Net", -0.03557555870295429], ["Inquiries", -0.019288756792319117], ["EInquiries", -0.0006515205053212594]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Public", 17, -0.09517670668847182], ["Bring", 11, 0.03646932318145196], ["Net", 34, -0.03463042405038497], ["Inquiries", 24, -0.019859877739505902], ["EInquiries", 0, -0.000974422166708546]], 1, "EInquiries Bring Public Inquiries Net", raw_div, true);
+            exp.show_raw_text([["Public", 17, -0.09548160232553472], ["Bring", 11, 0.03694314825911048], ["Net", 34, -0.03557555870295429], ["Inquiries", 24, -0.019288756792319117], ["EInquiries", 0, -0.0006515205053212594]], 1, "EInquiries Bring Public Inquiries Net", raw_div, true);
             
         </script>
         </body></html>

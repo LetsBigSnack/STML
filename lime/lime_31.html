@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divYMNOWVSDEP8U4H6"></div>
+        <div class="lime top_div" id="top_divLXD562P6XJB1MQJ"></div>
         
         <script>
-        var top_div = d3.select('#top_divYMNOWVSDEP8U4H6').classed('lime top_div', true);
+        var top_div = d3.select('#top_divLXD562P6XJB1MQJ').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.15605637769037717, 0.8439436223096228]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.15624204444137113, 0.8437579555586289]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Questions", 0.14476243988535312], ["Pretty", 0.0494480039552597], ["Little", 0.03133992614445971], ["Liars", -0.025716973552981522]], 1, exp_div);
+                exp.show([["Questions", 0.14448767816028527], ["Pretty", 0.05027107845047065], ["Little", 0.03266374187650078], ["Liars", -0.025211900866570026]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Questions", 0, 0.14476243988535312], ["Pretty", 10, 0.0494480039552597], ["Little", 17, 0.03133992614445971], ["Liars", 24, -0.025716973552981522]], 1, "Questions Pretty Little Liars", raw_div, true);
+            exp.show_raw_text([["Questions", 0, 0.14448767816028527], ["Pretty", 10, 0.05027107845047065], ["Little", 17, 0.03266374187650078], ["Liars", 24, -0.025211900866570026]], 1, "Questions Pretty Little Liars", raw_div, true);
             
         </script>
         </body></html>

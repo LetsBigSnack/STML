@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divVGXFT2XPKET3R2Q"></div>
+        <div class="lime top_div" id="top_divFDUU5NYHYH4I4EO"></div>
         
         <script>
-        var top_div = d3.select('#top_divVGXFT2XPKET3R2Q').classed('lime top_div', true);
+        var top_div = d3.select('#top_divFDUU5NYHYH4I4EO').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.06881628805907003, 0.93118371194093]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.06881082429777585, 0.9311891757022241]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Things", 0.20855047721611572], ["Totally", 0.09359302036760624], ["Turkey", -0.07523077137707113], ["Delicious", 0.07313589388927835], ["Leftover", -0.028572848761015648]], 1, exp_div);
+                exp.show([["Things", 0.20710089764418657], ["Totally", 0.09541002706908573], ["Delicious", 0.07526756148346464], ["Turkey", -0.07378182450532633], ["Leftover", -0.025886944906890474]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Things", 19, 0.20855047721611572], ["Totally", 1, 0.09359302036760624], ["Turkey", 35, -0.07523077137707113], ["Delicious", 9, 0.07313589388927835], ["Leftover", 26, -0.028572848761015648]], 1, " Totally Delicious Things Leftover Turkey", raw_div, true);
+            exp.show_raw_text([["Things", 19, 0.20710089764418657], ["Totally", 1, 0.09541002706908573], ["Delicious", 9, 0.07526756148346464], ["Turkey", 35, -0.07378182450532633], ["Leftover", 26, -0.025886944906890474]], 1, " Totally Delicious Things Leftover Turkey", raw_div, true);
             
         </script>
         </body></html>

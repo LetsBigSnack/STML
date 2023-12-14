@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divSMXANOP8XWF3OS3"></div>
+        <div class="lime top_div" id="top_divQ5KGV9JQ5O1ZCLZ"></div>
         
         <script>
-        var top_div = d3.select('#top_divSMXANOP8XWF3OS3').classed('lime top_div', true);
+        var top_div = d3.select('#top_divQ5KGV9JQ5O1ZCLZ').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.044259268289838616, 0.9557407317101614]);
+            var pp = new lime.PredictProba(pp_svg, ["Not Clickbait", "Clickbait"], [0.04430577861742302, 0.955694221382577]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Not Clickbait", "Clickbait"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["Know", 0.1335110673195131], ["Probably", 0.027894805766251467], ["Didnt", 0.023166669251994742], ["Holiday", 0.020365709227563106], ["Facts", 0.014934268612869731]], 1, exp_div);
+                exp.show([["Know", 0.13386136566284768], ["Probably", 0.027672456136656677], ["Didnt", 0.022518599925963365], ["Holiday", 0.01841566550579047], ["Facts", 0.015140072958234666]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_text([["Know", 22, 0.1335110673195131], ["Probably", 7, 0.027894805766251467], ["Didnt", 16, 0.023166669251994742], ["Holiday", 27, 0.020365709227563106], ["Facts", 1, 0.014934268612869731]], 1, " Facts Probably Didnt Know Holiday", raw_div, true);
+            exp.show_raw_text([["Know", 22, 0.13386136566284768], ["Probably", 7, 0.027672456136656677], ["Didnt", 16, 0.022518599925963365], ["Holiday", 27, 0.01841566550579047], ["Facts", 1, 0.015140072958234666]], 1, " Facts Probably Didnt Know Holiday", raw_div, true);
             
         </script>
         </body></html>
