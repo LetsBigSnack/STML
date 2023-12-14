@@ -42,7 +42,7 @@ app = Flask(__name__, static_url_path='/static')
 ## Text - Cleaning
 
 def RemoveSpecialCharacters(sentence):
-    return re.sub('[^a-zA-Z0-9]+',' ',sentence)
+    return re.sub('[^a-zA-Z0-9?!]+',' ',sentence)
 
 def ConvertToLowerCase(sentence):
     return sentence.lower()

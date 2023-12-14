@@ -28,6 +28,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, r
 from sklearn.datasets import make_classification
 from sklearn.metrics import ConfusionMatrixDisplay
 from sklearn.pipeline import Pipeline, make_pipeline
+from sklearn.calibration import CalibratedClassifierCV
 
 # LIME and SHAP for Explainable AI
 import lime
@@ -36,15 +37,17 @@ from lime.lime_text import LimeTextExplainer
 import shap
 
 
+nltk.download('stopwords')
+
 ## Text - Cleaning
 
 ## Default Special Character removal
-def RemoveSpecialCharacters(sentence):
-    return re.sub('[^a-zA-Z]+',' ',sentence)
+# def RemoveSpecialCharacters(sentence):
+#    return re.sub('[^a-zA-Z]+',' ',sentence)
 
 ##Custom Character removal
-# def RemoveSpecialCharacters(sentence):
-#     return re.sub('[^a-zA-Z0-9!?]+',' ',sentence)
+def RemoveSpecialCharacters(sentence):
+    return re.sub('[^a-zA-Z0-9!?]+',' ',sentence)
 
 
 
@@ -136,10 +139,11 @@ def plotMetrics(Classifiers,y_test, predictions):
     for c in Classifiers:
         Model.append(c['label'])
 
-  
+    color = ['lightblue', 'blue', 'purple', 'green', 'orange']
+
     Index = [1,2,3,4,5]
     plt.figure(figsize=(10, 10))  
-    plt.bar(Index,score_Accuracy)
+    plt.bar(Index,score_Accuracy, color = color)
     plt.xticks(Index,Model,rotation=45)
     plt.ylabel('Accuracy')
     plt.xlabel('Model')
@@ -149,7 +153,7 @@ def plotMetrics(Classifiers,y_test, predictions):
 
     Index = [1,2,3,4,5]
     plt.figure(figsize=(10, 10))  
-    plt.bar(Index,score_F1)
+    plt.bar(Index,score_F1,color = color)
     plt.xticks(Index,Model,rotation=45)
     plt.ylabel('F1')
     plt.xlabel('Model')
@@ -159,7 +163,7 @@ def plotMetrics(Classifiers,y_test, predictions):
 
     Index = [1,2,3,4,5]
     plt.figure(figsize=(10, 10))  
-    plt.bar(Index,score_Precision)
+    plt.bar(Index,score_Precision,color = color)
     plt.xticks(Index,Model,rotation=45)
     plt.ylabel('Precision')
     plt.xlabel('Model')
@@ -169,7 +173,7 @@ def plotMetrics(Classifiers,y_test, predictions):
 
     Index = [1,2,3,4,5]
     plt.figure(figsize=(10, 10))  
-    plt.bar(Index,score_Recall)
+    plt.bar(Index,score_Recall,color = color)
     plt.xticks(Index,Model,rotation=45)
     plt.ylabel('Recall')
     plt.xlabel('Model')
@@ -200,9 +204,6 @@ def plotAUCROC(Classifiers,X_train_clean, y_train, X_test_dtm):
     plt.legend(loc="lower right")
     plt.savefig('plots/aucroc.png')
     plt.close()
-
-## Explainability
-
 
 
 # Classifieres
@@ -347,4 +348,4 @@ for i in range(100):
 
     # Visualize the SHAP values - Summary plot
     shap.summary_plot(shap_values, X_test_dtm[i], feature_names=vect.get_feature_names_out(), show=False, max_display=20)
-    plt.savefig("shap/shap_summary_["+X_test.iloc[i].replace(" ", "_")+"].png")
+    plt.savefig("shap/shap_summary_"+str(i)+"_["+X_test.iloc[i].replace(" ", "_")+"].png")
