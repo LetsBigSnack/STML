@@ -37,6 +37,8 @@ from lime import lime_text
 from lime.lime_text import LimeTextExplainer
 import shap
 
+
+nltk.download('stopwords')
 app = Flask(__name__, static_url_path='/static')
 
 ## Text - Cleaning
